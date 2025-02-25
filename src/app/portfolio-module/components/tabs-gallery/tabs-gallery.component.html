@@ -1,0 +1,13 @@
+<ul class="tabs nav nav-pills rounded">
+  <li class="tabs__item nav-item fs-5" *ngFor="let tab of tabs">
+    <button
+      class="nav-link"
+      [attr.target]="tab.active ? '_self' : '_blank'"
+      id="{{ tab.id }}"
+      [class.active]="tab.active"
+      (click)="returnTabs(tab)"
+    >
+      {{ tab.name }}
+    </button>
+  </li>
+</ul>

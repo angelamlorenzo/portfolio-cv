@@ -1,0 +1,42 @@
+<div class="modal" [@moveDownUpStatus]="open" [ngStyle]="open ? { display: 'block' } : { display: 'none' }">
+  <div class="modal-dialog-centered">
+    <div class="modal-content min-vh-100">
+      <div class="row py-3 mx-xl-5 px-5">
+        <div class="d-flex justify-content-end">
+          <button (click)="close()" type="button" class="btn-close text-secondary fs-4" aria-label="Close"></button>
+        </div>
+        <div class="modal__description">
+          <div class="align-self-center">
+            <span class="modal__description--bg-rainbow badge mb-2">{{ category | uppercase }}</span>
+            <h1 class="text-secondary fw-bold mb-1">{{ selectedProject.title | uppercase }}</h1>
+            <h5 class="text-secondary mt-0 mb-4">// {{ selectedProject.date }}</h5>
+          </div>
+          <div class="row">
+            <div class="col-xxl-8 mb-4">
+              <div class="my-5" *ngIf="loading"><app-spinner></app-spinner></div>
+              <app-slide *ngIf="!loading" [images]="selectedProject.images" [currentIndex]="currentIndex"></app-slide>
+            </div>
+            <div class="col-xxl-4 ps-xxl-5">
+              <p class="mb-lg-5 mb-4 fst-italic fs-2 fw-bold rainbow-text">{{ selectedProject.description }}</p>
+              <p>{{ selectedProject.paragraphOne }}</p>
+              <p *ngIf="selectedProject.paragraphTwo">
+                {{ selectedProject.paragraphTwo }}
+              </p>
+              <p *ngIf="selectedProject.paragraphThree">
+                {{ selectedProject.paragraphThree }}
+              </p>
+              <p class="fst-italic modal__description--border-rainbow mt-5 pt-3">
+                {{ selectedProject.technicalSpecs }}
+              </p>
+              <div class="mt-4" *ngIf="selectedProject.urlName" (click)="goToLink()">
+                <button class="btn btn-outline-secondary fw-bold">
+                  {{ selectedProject.urlName }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
