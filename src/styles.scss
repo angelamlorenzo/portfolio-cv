@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --transition-gallery: 0.3s ease;
+  --rainbow-bg: linear-gradient(
+      to right,
+      rgba(153, 204, 255, 0.7) 0%,
+      rgba(153, 204, 255, 0.7) 25%,
+      rgba(204, 153, 255, 0.7) 50%,
+      rgba(255, 153, 204, 0.7) 75%,
+      rgba(255, 153, 204, 0.7) 100%
+    ),
+    radial-gradient(circle at center, rgba(153, 204, 255, 0.7), rgba(204, 153, 255, 0.7), rgba(255, 153, 204, 0.7));
+  --rainbow-text: linear-gradient(to right, #99ccff, #99ccff, #cc99ff, #cc99ff, #ff99cc, #ff99cc);
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+.rainbow-text {
+  background: var(--rainbow-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 2.5rem;
+}
+
+.btn-outline-secondary {
+  position: relative;
+  border: 2px solid transparent;
+  color: var (--bs-secondary-color);
+  border-image: var(--rainbow-text);
+  border-image-slice: 1;
+}
+
+.btn-outline-secondary:hover {
+  color: var(--bs-light);
+  border-radius: 0;
+  background: var(--rainbow-bg);
+}

@@ -1,0 +1,17 @@
+.custom-spinner {
+  &__square {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 3px solid transparent;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #99ccff, #cc99ff, #ff99cc) 1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

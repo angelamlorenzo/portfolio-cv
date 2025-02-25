@@ -1,0 +1,100 @@
+[
+  {
+    "category": "Animales",
+    "projects": [
+      {
+        "title": "Perro muy majo",
+        "previewImage": "https://picsum.photos/id/237/500/350",
+        "date": "2024",
+        "description": "Un cachorro de labrador siendo un animal muy majo y adorable",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
+        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [
+          { "src": "https://picsum.photos/id/237/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "Gaviota con cara de susto",
+        "previewImage": "https://picsum.photos/id/275/500/350",
+        "date": "2008",
+        "description": "Una gaviota que, a pesar de que no hay viento, tiene tribulaciones vitales de gran magnitud",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae. Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [
+          { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/237/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "Oso peposo",
+        "previewImage": "https://picsum.photos/id/433/500/350",
+        "date": "2020",
+        "description": "Un oso con la misma cara de wadafak que pongo yo al ver el board de tareas",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
+        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [
+          { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Flores",
+    "projects": [
+      {
+        "title": "Campanilla violeta",
+        "previewImage": "https://picsum.photos/id/152/500/350",
+        "date": "2021",
+        "description": "Describe here the project with two or three sentences that sound catching!",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
+        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [
+          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
+        "title": "Flor de cerezo",
+        "previewImage": "https://picsum.photos/id/82/500/350",
+        "date": "2020",
+        "description": "Describe here the project with two or three sentences that sound catching!",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
+        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Otros",
+    "projects": [
+      {
+        "title": "Reloj de manillas",
+        "previewImage": "https://picsum.photos/id/175/500/350",
+        "date": "2023",
+        "description": "Describe here the project with two or three sentences that sound catching!",
+        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
+        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
+        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
+        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "images": [{ "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 1" }]
+      }
+    ]
+  }
+]

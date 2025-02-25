@@ -1,0 +1,24 @@
+.nav-pills .nav-link {
+  color: var(--bs-secondary-color);
+}
+
+.nav-pills .nav-link.active {
+  position: relative;
+  background-color: transparent;
+  color: var(--bs-secondary-color);
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent;
+  border-image: var(--rainbow-text);
+  border-image-slice: 1;
+  border-radius: 0.25rem;
+  z-index: -1;
+}
