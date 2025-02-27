@@ -1,22 +1,18 @@
 <div class="main-page">
   <app-navbar></app-navbar>
+  <app-cover></app-cover>
   <div class="row my-5 mx-xl-5 px-5">
+    <h2 class="text-center mb-5">Portfolio</h2>
     <div class="main-page__gallery">
       <app-tabs-gallery [tabs]="tabsItem" [selectedCategory]="selectedCategory" (actionSelectTab)="getTabs($event)"></app-tabs-gallery>
       <div class="my-5" *ngIf="loading"><app-spinner></app-spinner></div>
       <div *ngIf="!loading">
         <app-gallery [gallery]="gallery" [selectedCategory]="selectedCategory" (projectInfoAction)="showProjectInfo($event)"></app-gallery>
       </div>
-      <div class="d-flex justify-content-end">
-        <div class="mt-5">
-          <p class="text-secondary fs-5">
-            ¿Quieres ver mi trabajo en un entorno <em>offline?</em> <br />
-            ¡Descárgate mi portfolio en PDF!
-          </p>
-          <button class="btn btn-outline-secondary fw-bold fs-5">Button</button>
-        </div>
-      </div>
     </div>
+  </div>
+  <div class="mt-5 bg-light">
+    <app-work-experience></app-work-experience>
   </div>
 
   <app-modal-detail
