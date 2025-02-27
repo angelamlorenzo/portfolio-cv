@@ -3,29 +3,20 @@
 
   &__parallax {
     position: relative;
-    background-image: url("https://picsum.photos/id/114/2000/1500");
+    background-image: linear-gradient(
+        to right,
+        rgba(153, 204, 255, 0.2) 0%,
+        rgba(153, 204, 255, 0.2) 25%,
+        rgba(204, 153, 255, 0.2) 50%,
+        rgba(255, 153, 204, 0.2) 75%,
+        rgba(255, 153, 204, 0.2) 100%
+      ),
+      url("https://picsum.photos/id/114/2000/1500"); /* La imagen de fondo */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 75vh;
-
-    .h2 {
-      font-size: 3rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 5;
-    }
-
-    &__title {
-      font-size: 6rem;
-    }
-
-    &__job-position {
-      font-size: 4rem;
-    }
   }
 
   &__parallax2 {

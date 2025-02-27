@@ -1,20 +1,27 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { IGallery, IProject, ITabs } from '../../models/interfaces';
-import { BehaviorSubject, Subscription } from 'rxjs';
-import { PortfolioService } from '../../services/portfolio.service';
-import { HttpErrorResponse } from '@angular/common/http';
+import { Component, OnDestroy, OnInit } from "@angular/core";
+import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
+import { BehaviorSubject, Subscription } from "rxjs";
+import { PortfolioService } from "../../services/portfolio.service";
+import { HttpErrorResponse } from "@angular/common/http";
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.scss'],
+  selector: "app-main-page",
+  templateUrl: "./main-page.component.html",
+  styleUrls: ["./main-page.component.scss"],
 })
 export class MainPageComponent implements OnInit, OnDestroy {
-  public selectedCategory: string = 'Animales';
+  public navBar: INavBar[] = [
+    { href: "#about", name: "About me", active: true },
+    { href: "#skills", name: "Skills", active: false },
+    { href: "#portfolio", name: "Portfolio", active: false },
+    { href: "#resume", name: "Resume", active: false },
+  ];
+
+  public selectedCategory: string = "Animales";
   public tabsItem: ITabs[] = [
-    { active: true, name: 'Animales', id: 'animales', category: 'Animales' },
-    { active: false, name: 'Flores', id: 'flores', category: 'Flores' },
-    { active: false, name: 'Otros', id: 'otros', category: 'Otros' },
+    { active: true, name: "Animales", id: "animales", category: "Animales" },
+    { active: false, name: "Flores", id: "flores", category: "Flores" },
+    { active: false, name: "Otros", id: "otros", category: "Otros" },
   ];
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
@@ -72,7 +79,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
         },
         error: (e: HttpErrorResponse) => {
           this.loading = false;
-          console.error('Error datos');
+          console.error("Error datos");
         },
       })
     );

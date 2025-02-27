@@ -1,3 +1,15 @@
+export interface INavBar {
+  href: string;
+  name: string;
+  active: boolean;
+}
+
+export interface ITypeParams {
+  word: string;
+  speed: number;
+  backwards?: boolean;
+}
+
 export interface ITabs {
   active: boolean;
   name: string;
