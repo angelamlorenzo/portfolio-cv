@@ -3,6 +3,7 @@ import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { PortfolioService } from "../../services/portfolio.service";
 import { HttpErrorResponse } from "@angular/common/http";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-main-page",
@@ -34,7 +35,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   private subscription = new Subscription();
 
-  constructor(public portfolioService: PortfolioService) {}
+  constructor(public portfolioService: PortfolioService, public router: Router) {}
 
   ngOnInit(): void {
     this.getGallery();
@@ -42,47 +43,6 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
-  }
-
-  public getTabs(tabs: ITabs[]): void {
-    const activeTab = tabs.find((tab) => tab.active);
-    if (activeTab) {
-      this.loading = true;
-      this.selectedCategory = activeTab.category;
-    }
-    this.getGallery();
-  }
-
-  public closeModal(): void {
-    this.open.next(false);
-    this.loadingModal = false;
-  }
-
-  public showProjectInfo(project: IProject): void {
-    this.open.next(true);
-    this.loadingModal = true;
-    this.selectedProject = project;
-    this.currentIndex.next(0);
-
-    setTimeout(() => {
-      this.loadingModal = false;
-    }, 500);
-  }
-
-  private getGallery() {
-    this.loading = true;
-    this.subscription.add(
-      this.portfolioService.getGalleryCategory().subscribe({
-        next: (photos: IGallery[]) => {
-          this.loading = false;
-          this.gallery.next(photos);
-        },
-        error: (e: HttpErrorResponse) => {
-          this.loading = false;
-          console.error("Error datos");
-        },
-      })
-    );
   }
 
   @HostListener("window:scroll", [])
@@ -103,5 +63,49 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.navBar.forEach((item) => {
       item.active = item.href === currentSection;
     });
+  }
+
+  public getTabs(tabs: ITabs[]): void {
+    const activeTab = tabs.find((tab) => tab.active);
+    if (activeTab) {
+      this.loading = true;
+      this.selectedCategory = activeTab.category;
+    }
+    this.getGallery();
+  }
+
+  public closeModal(): void {
+    this.open.next(false);
+    this.loadingModal = false;
+  }
+
+  public showProjectInfo(project: IProject): void {
+    this.open.next(true);
+
+    this.loadingModal = true;
+    this.selectedProject = project;
+    this.currentIndex.next(0);
+
+    setTimeout(() => {
+      this.loadingModal = false;
+    }, 100);
+
+    this.router.navigate(["/project"]);
+  }
+
+  private getGallery() {
+    this.loading = true;
+    this.subscription.add(
+      this.portfolioService.getGalleryCategory().subscribe({
+        next: (photos: IGallery[]) => {
+          this.loading = false;
+          this.gallery.next(photos);
+        },
+        error: (e: HttpErrorResponse) => {
+          this.loading = false;
+          console.error("Error datos");
+        },
+      })
+    );
   }
 }

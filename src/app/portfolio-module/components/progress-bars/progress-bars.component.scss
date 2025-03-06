@@ -1,5 +1,26 @@
+.progress-bars {
+  position: relative;
+
+  &__parallax {
+    position: relative;
+    background-image: linear-gradient(
+        to right,
+        rgba(153, 204, 255, 0.2) 0%,
+        rgba(153, 204, 255, 0.2) 25%,
+        rgba(204, 153, 255, 0.2) 50%,
+        rgba(255, 153, 204, 0.2) 75%,
+        rgba(255, 153, 204, 0.2) 100%
+      ),
+      url("https://picsum.photos/id/114/2000/1500");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .progress {
-  height: 5px;
+  height: 6px;
 }
 
 .progress-bar {

@@ -1,38 +1,125 @@
-<div class="work-experience">
+<div class="work-experience bg-light">
   <div class="container py-5">
-    <h2 class="text-center mb-5">Formación y experiencia</h2>
-    <div class="row bg-light b-5">
-      <div class="col-6">
-        <div class="mb-3">
-          <h4>Work Position</h4>
-          <h6>2020-2025</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.</p>
-          <hr />
-        </div>
-        <div class="mb-3">
-          <h4>Work Position</h4>
-          <h6>2020-2025</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.</p>
-          <hr />
+    <div class="row py-5 g-5 justify-content-evenly">
+      <h2 class="text-center mt-2">Resume</h2>
+
+      <div class="col-12 col-md-5 p-0">
+        <div class="bg-white shadow-sm rounded py-4 px-5">
+          <h4 class="rainbow-text mb-0">Work Experience</h4>
+          <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Work Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Work Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <!-- Agregar más trabajos -->
+          <div *ngIf="isWorkExperienceExpanded" class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Work Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <div *ngIf="isWorkExperienceExpanded" class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Work Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <!-- Botón para mostrar u ocultar más experiencia -->
+          <p class="mb-0 text-end">
+            <button class="btn btn-link text-secondary text-decoration-none" (click)="toggleWorkExperience()">
+              {{ isWorkExperienceExpanded ? "See less" : "See more" }}
+              <i class="bi" [ngClass]="isWorkExperienceExpanded ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </button>
+          </p>
         </div>
       </div>
-      <div class="col-6">
-        <div class="mb-3">
-          <h4>Work Position</h4>
-          <h6>2020-2025</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.</p>
-          <hr />
-        </div>
-        <div class="mb-3">
-          <h4>Work Position</h4>
-          <h6>2020-2025</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.</p>
-          <hr />
+
+      <div class="col-12 col-md-5 p-0">
+        <div class="bg-white shadow-sm rounded py-4 px-5">
+          <h4 class="rainbow-text mb-0">Education Experience</h4>
+          <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Education Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <div class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Education Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <!-- Agregar más educación -->
+          <div *ngIf="isEducationExperienceExpanded" class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Education Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <div *ngIf="isEducationExperienceExpanded" class="mb-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-5 fw-semibold mb-1">Education Position</p>
+              <p class="fst-italic fs-7 mb-1">2020-2025</p>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
+            </p>
+            <hr />
+          </div>
+
+          <!-- Botón para mostrar u ocultar más educación -->
+          <p class="mb-0 text-end">
+            <button class="btn text-secondary text-decoration-none" (click)="toggleEducationExperience()">
+              {{ isEducationExperienceExpanded ? "See less" : "See more" }}
+              <i class="bi" [ngClass]="isEducationExperienceExpanded ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
+            </button>
+          </p>
         </div>
       </div>
-    </div>
-    <div class="text-center mt-4">
-      <button class="btn btn-outline-secondary fw-bold btn-lg">Ampliar</button>
     </div>
   </div>
 </div>

@@ -17,6 +17,11 @@ export interface ITabs {
   category: string;
 }
 
+export interface IProgressBar {
+  percent: number;
+  skill: string;
+}
+
 export interface IGallery {
   category: string;
   projects: IProject[];

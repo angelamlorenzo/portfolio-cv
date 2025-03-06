@@ -1,14 +1,14 @@
 <div class="modal" [@moveDownUpStatus]="open" [ngStyle]="open ? { display: 'block' } : { display: 'none' }">
   <div class="modal-dialog-centered">
     <div class="modal-content min-vh-100">
-      <div class="row py-3 mx-xl-5 px-5">
+      <div class="row py-3 px-xl-5">
         <div class="d-flex justify-content-end">
           <button (click)="close()" type="button" class="btn-close text-secondary fs-4" aria-label="Close"></button>
         </div>
         <div class="modal__description">
           <div class="align-self-center">
             <span class="modal__description--bg-rainbow badge mb-2">{{ category | uppercase }}</span>
-            <h1 class="text-secondary fw-bold mb-1">{{ selectedProject.title | uppercase }}</h1>
+            <h1 class="text-secondary fw-bold mb-1">{{ selectedProject.title }}</h1>
             <h5 class="text-secondary mt-0 mb-4">// {{ selectedProject.date }}</h5>
           </div>
           <div class="row">
@@ -36,6 +36,7 @@
             </div>
           </div>
         </div>
+        -->
       </div>
     </div>
   </div>
