@@ -11,6 +11,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CoverComponent } from "./components/cover/cover.component";
 import { ProgressBarsComponent } from "./components/progress-bars/progress-bars.component";
 import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { WorkExperienceComponent } from './components/work-experience/work-exper
     CoverComponent,
     ProgressBarsComponent,
     WorkExperienceComponent,
+    AboutMeComponent,
   ],
   imports: [CommonModule],
   exports: [GalleryComponent, MainPageComponent],

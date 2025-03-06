@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from "@angular/core";
+import { Component, HostListener, OnDestroy, OnInit } from "@angular/core";
 import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { PortfolioService } from "../../services/portfolio.service";
@@ -83,5 +83,25 @@ export class MainPageComponent implements OnInit, OnDestroy {
         },
       })
     );
+  }
+
+  @HostListener("window:scroll", [])
+  onWindowScroll(): void {
+    let currentSection = "";
+
+    this.navBar.forEach((item) => {
+      const section = document.querySelector(item.href);
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight / 2 && rect.bottom >= 0;
+        if (isInViewport) {
+          currentSection = item.href;
+        }
+      }
+    });
+
+    this.navBar.forEach((item) => {
+      item.active = item.href === currentSection;
+    });
   }
 }

@@ -12,7 +12,7 @@
     ),
     radial-gradient(circle at center, rgba(153, 204, 255, 0.7), rgba(204, 153, 255, 0.7), rgba(255, 153, 204, 0.7));
   --rainbow-text: linear-gradient(to right, #99ccff, #99ccff, #cc99ff, #cc99ff, #ff99cc, #ff99cc);
-  --bs-secondary-color: #6c757d; /* Definimos un color para --bs-secondary-color */
+  --bs-secondary-color: var(--bs-gray-700);
 }
 
 body {
@@ -20,6 +20,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: var(--bs-gray-700);
 }
 
 .rainbow-text {

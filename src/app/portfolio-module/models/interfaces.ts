@@ -7,7 +7,7 @@ export interface INavBar {
 export interface ITypeParams {
   word: string;
   speed: number;
-  backwards?: boolean;
+  deleting?: boolean;
 }
 
 export interface ITabs {

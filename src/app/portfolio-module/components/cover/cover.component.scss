@@ -11,7 +11,7 @@
         rgba(255, 153, 204, 0.2) 75%,
         rgba(255, 153, 204, 0.2) 100%
       ),
-      url("https://picsum.photos/id/114/2000/1500"); /* La imagen de fondo */
+      url("https://picsum.photos/id/114/2000/1500");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,21 +19,28 @@
     height: 75vh;
   }
 
+  &__content {
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 32px -6px rgba(117, 117, 117, 1);
+    -moz-box-shadow: 0px 0px 32px -6px rgba(117, 117, 117, 1);
+    box-shadow: 0px 0px 32px -6px rgba(117, 117, 117, 1);
+  }
+
   &__parallax2 {
     position: relative;
-    background-image: url("https://picsum.photos/id/18/2000/1500");
+    background-image: linear-gradient(
+        to right,
+        rgba(153, 204, 255, 0.2) 0%,
+        rgba(153, 204, 255, 0.2) 25%,
+        rgba(204, 153, 255, 0.2) 50%,
+        rgba(255, 153, 204, 0.2) 75%,
+        rgba(255, 153, 204, 0.2) 100%
+      ),
+      url("https://picsum.photos/id/344/2000/1500");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-}
-
-.content {
-  position: relative;
-  z-index: 2;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
 }

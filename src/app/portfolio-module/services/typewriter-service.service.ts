@@ -7,23 +7,27 @@ import { ITypeParams } from "../models/interfaces";
   providedIn: "root",
 })
 export class TypewriterService {
-  private type({ word, speed, backwards = false }: ITypeParams) {
+  public type({ word, speed, deleting = false }: ITypeParams) {
     return interval(speed).pipe(
-      map((x) => (backwards ? word.substring(0, word.length - x) : word.substring(0, x + 1))),
-      take(word.length)
+      map((x) => {
+        if (deleting) {
+          return word.substring(0, word.length - x);
+        } else {
+          return word.substring(0, x + 1);
+        }
+      }),
+      take(deleting ? word.length + 1 : word.length)
     );
   }
 
-  typeEffect(word: string) {
-    return concat(
-      this.type({ word, speed: 50 }),
-      of("").pipe(delay(1200), ignoreElements()),
-      this.type({ word, speed: 30, backwards: true }),
-      of("").pipe(delay(300), ignoreElements())
-    );
+  public typeEffect(word: string) {
+    const forward = this.type({ word, speed: 50 });
+    const backward = this.type({ word, speed: 30, deleting: true });
+
+    return concat(forward, of("").pipe(delay(1200), ignoreElements()), backward, of("").pipe(delay(300), ignoreElements()));
   }
 
-  getTypewriterEffect(titles: string[]) {
+  public getTypewriterEffect(titles: string[]) {
     return from(titles).pipe(
       concatMap((title) => this.typeEffect(title)),
       repeat()
