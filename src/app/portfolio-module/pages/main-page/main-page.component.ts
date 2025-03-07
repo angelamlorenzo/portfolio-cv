@@ -19,6 +19,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   ];
 
   public selectedCategory: string = "Animales";
+
   public tabsItem: ITabs[] = [
     { active: true, name: "Animales", id: "animales", category: "Animales" },
     { active: false, name: "Flores", id: "flores", category: "Flores" },
@@ -27,9 +28,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
   public selectedProject: IProject = {} as IProject;
-  public open: BehaviorSubject<boolean> = new BehaviorSubject(false);
   public loading: boolean = false;
-  public loadingModal: boolean = false;
 
   public currentIndex: BehaviorSubject<number> = new BehaviorSubject(0);
 
@@ -74,16 +73,10 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.getGallery();
   }
 
-  public closeModal(): void {
-    this.open.next(false);
-    this.loadingModal = false;
-  }
-
   public showProjectInfo(project: IProject): void {
-    // Reemplazar espacios por guiones en el título para la URL
     const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
-
-    // Navegar a la ruta del proyecto
+    this.selectedProject = project;
+    this.currentIndex.next;
     this.router.navigate([`/projects/${titleSlug}`]);
   }
 

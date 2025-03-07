@@ -1,7 +1,8 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { IGallery, IProject } from "../../models/interfaces";
 import { PortfolioService } from "../../services/portfolio.service";
+import { BehaviorSubject } from "rxjs";
 
 @Component({
   selector: "app-project-page",
@@ -12,40 +13,34 @@ export class ProjectPageComponent implements OnInit {
   public projectTitle: string | null = null;
   public project: IProject | null = null;
   public loading: boolean = true;
-  public error: string | null = null;
+  public category: string = "";
+  public selectedProject: IProject = {} as IProject;
+  public currentIndex: BehaviorSubject<number> = new BehaviorSubject(0);
 
   constructor(private route: ActivatedRoute, private portfolioService: PortfolioService) {}
 
-  ngOnInit(): void {
-    this.projectTitle = this.route.snapshot.paramMap.get("title");
-    console.log("Title parameter:", this.projectTitle); // Verifica si el parámetro se recibe correctamente
+  public goToLink(): void {}
 
-    if (this.projectTitle) {
-      const titleDecoded = this.projectTitle.replace(/-/g, " ");
-      console.log("Decoded project title:", titleDecoded); // Verifica si el título es correcto
-      this.getProjectDetails(titleDecoded);
-    }
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      const title = params.get("title")?.replace(/-/g, " ");
+      if (title) {
+        this.getProjectDetails(title);
+      }
+    });
   }
 
   getProjectDetails(title: string): void {
-    this.portfolioService.getGalleryCategory().subscribe(
-      (galleries: IGallery[]) => {
+    this.portfolioService.getGalleryCategory().subscribe((galleries: IGallery[]) => {
+      next: (photos: IGallery[]) => {
         let foundProject: IProject | undefined;
-        galleries.forEach((gallery) => {
+        photos.forEach((gallery) => {
           foundProject = gallery.projects.find((p) => p.title === title);
           if (foundProject) {
             this.project = foundProject;
           }
         });
-
-        if (!foundProject) {
-          this.error = "Proyecto no encontrado";
-        }
-      },
-      (error) => {
-        console.error("Error al obtener el proyecto", error);
-        this.error = "Error al obtener el proyecto";
-      }
-    );
+      };
+    });
   }
 }
