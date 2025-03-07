@@ -80,17 +80,11 @@ export class MainPageComponent implements OnInit, OnDestroy {
   }
 
   public showProjectInfo(project: IProject): void {
-    this.open.next(true);
+    // Reemplazar espacios por guiones en el título para la URL
+    const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
 
-    this.loadingModal = true;
-    this.selectedProject = project;
-    this.currentIndex.next(0);
-
-    setTimeout(() => {
-      this.loadingModal = false;
-    }, 100);
-
-    this.router.navigate(["/project"]);
+    // Navegar a la ruta del proyecto
+    this.router.navigate([`/projects/${titleSlug}`]);
   }
 
   private getGallery() {

@@ -12,7 +12,14 @@ import { CoverComponent } from "./components/cover/cover.component";
 import { ProgressBarsComponent } from "./components/progress-bars/progress-bars.component";
 import { WorkExperienceComponent } from "./components/work-experience/work-experience.component";
 import { AboutMeComponent } from "./components/about-me/about-me.component";
-import { RouterModule } from "@angular/router";
+import { RouterModule, Routes } from "@angular/router";
+import { ProjectPageComponent } from "./pages/project-page/project-page.component";
+import { AppRoutingModule } from "../app-routing.module";
+
+const routes: Routes = [
+  { path: "", component: MainPageComponent },
+  { path: "projects/:title", component: ProjectPageComponent },
+];
 
 @NgModule({
   declarations: [
@@ -28,8 +35,9 @@ import { RouterModule } from "@angular/router";
     ProgressBarsComponent,
     WorkExperienceComponent,
     AboutMeComponent,
+    ProjectPageComponent,
   ],
-  imports: [CommonModule],
-  exports: [GalleryComponent, MainPageComponent, RouterModule],
+  imports: [CommonModule, RouterModule.forChild(routes)],
+  exports: [GalleryComponent, MainPageComponent, ProjectPageComponent, RouterModule],
 })
 export class PortfolioModule {}
