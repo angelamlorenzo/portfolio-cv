@@ -1,4 +1,4 @@
-.modal {
+.project-detail {
   &__description {
     &--bg-rainbow {
       background: var(--rainbow-bg);
@@ -6,7 +6,7 @@
       letter-spacing: 1px;
     }
 
-    /*&--border-rainbow {
+    &--border-rainbow {
       position: relative;
       padding-bottom: 2px;
 
@@ -19,6 +19,6 @@
         height: 2px;
         background: var(--rainbow-text);
       }
-    }*/
+    }
   }
 }

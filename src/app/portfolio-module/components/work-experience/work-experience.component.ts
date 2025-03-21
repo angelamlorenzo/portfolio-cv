@@ -6,17 +6,14 @@ import { Component } from "@angular/core";
   styleUrls: ["./work-experience.component.scss"],
 })
 export class WorkExperienceComponent {
-  // Variables de control para expandir o colapsar
-  isWorkExperienceExpanded = false;
-  isEducationExperienceExpanded = false;
+  public isWorkExperienceExpanded: boolean = false;
+  public isEducationExperienceExpanded: boolean = false;
 
-  // Método para alternar la visibilidad de la experiencia laboral
-  toggleWorkExperience(): void {
+  public toggleWorkExperience(): void {
     this.isWorkExperienceExpanded = !this.isWorkExperienceExpanded;
   }
 
-  // Método para alternar la visibilidad de la experiencia educativa
-  toggleEducationExperience(): void {
+  public toggleEducationExperience(): void {
     this.isEducationExperienceExpanded = !this.isEducationExperienceExpanded;
   }
 }

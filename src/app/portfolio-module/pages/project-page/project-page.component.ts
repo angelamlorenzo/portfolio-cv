@@ -1,46 +1,38 @@
-import { Component, EventEmitter, Input, OnInit, Output } from "@angular/core";
+// project-page.component.ts
+import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { IGallery, IProject } from "../../models/interfaces";
 import { PortfolioService } from "../../services/portfolio.service";
-import { BehaviorSubject } from "rxjs";
+import { IProject } from "../../models/interfaces";
+import { BehaviorSubject, Subscription } from "rxjs";
 
 @Component({
   selector: "app-project-page",
   templateUrl: "./project-page.component.html",
   styleUrls: ["./project-page.component.scss"],
 })
-export class ProjectPageComponent implements OnInit {
-  public projectTitle: string | null = null;
-  public project: IProject | null = null;
-  public loading: boolean = true;
+export class ProjectPageComponent implements OnInit, OnDestroy {
+  public selectedProject: BehaviorSubject<IProject> = new BehaviorSubject<IProject>({} as IProject);
+  public projectTitle: string = "";
   public category: string = "";
-  public selectedProject: IProject = {} as IProject;
-  public currentIndex: BehaviorSubject<number> = new BehaviorSubject(0);
+  public loading: boolean = false;
+  private subscription: Subscription = new Subscription();
 
   constructor(private route: ActivatedRoute, private portfolioService: PortfolioService) {}
 
-  public goToLink(): void {}
-
   ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
-      const title = params.get("title")?.replace(/-/g, " ");
-      if (title) {
-        this.getProjectDetails(title);
-      }
+    this.route.params.subscribe((params) => {
+      this.projectTitle = params["projectTitle"];
+      this.projectTitle = params["category"];
     });
+
+    this.subscription.add(
+      this.portfolioService.selectedProject.subscribe((project) => {
+        this.selectedProject.next(project);
+      })
+    );
   }
 
-  getProjectDetails(title: string): void {
-    this.portfolioService.getGalleryCategory().subscribe((galleries: IGallery[]) => {
-      next: (photos: IGallery[]) => {
-        let foundProject: IProject | undefined;
-        photos.forEach((gallery) => {
-          foundProject = gallery.projects.find((p) => p.title === title);
-          if (foundProject) {
-            this.project = foundProject;
-          }
-        });
-      };
-    });
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 }

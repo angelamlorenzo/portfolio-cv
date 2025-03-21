@@ -18,7 +18,7 @@ import { AppRoutingModule } from "../app-routing.module";
 
 const routes: Routes = [
   { path: "", component: MainPageComponent },
-  { path: "projects/:title", component: ProjectPageComponent },
+  { path: "projects/:category/:title", component: ProjectPageComponent },
 ];
 
 @NgModule({

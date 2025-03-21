@@ -15,7 +15,11 @@
       <app-tabs-gallery [tabs]="tabsItem" [selectedCategory]="selectedCategory" (actionSelectTab)="getTabs($event)"></app-tabs-gallery>
       <div class="my-5" *ngIf="loading"><app-spinner></app-spinner></div>
       <div *ngIf="!loading">
-        <app-gallery [gallery]="gallery" [selectedCategory]="selectedCategory" (projectInfoAction)="showProjectInfo($event)"></app-gallery>
+        <app-gallery
+          [gallery]="gallery"
+          [selectedCategory]="selectedCategory"
+          (selectProjectAction)="showProjectInfo($event)"
+        ></app-gallery>
       </div>
     </div>
   </div>

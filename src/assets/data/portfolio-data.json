@@ -6,14 +6,14 @@
         "title": "Perro muy majo",
         "previewImage": "https://picsum.photos/id/237/500/350",
         "date": "2024",
-        "description": "Un cachorro de labrador siendo un animal muy majo y adorable",
+        "description": "Un cachorro de labrador siendo un animal muy majo",
         "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
         "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
         "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
         "images": [
-          { "src": "https://picsum.photos/id/237/1000/500", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "https://picsum.photos/id/82/1000/500", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "https://picsum.photos/id/175/1000/500", "altText": "Lorem ipsum dolor sit amet 3" }
+          { "src": "https://picsum.photos/id/237/1400/800", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1400/800", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/175/1400/800", "altText": "Lorem ipsum dolor sit amet 3" }
         ],
         "url": "www.urlfake.com",
         "urlName": "urlFake"
@@ -26,9 +26,9 @@
         "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae. Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
         "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
         "images": [
-          { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "https://picsum.photos/id/237/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+          { "src": "https://picsum.photos/id/275/1400/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/237/1400/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/433/1400/900", "altText": "Lorem ipsum dolor sit amet 3" }
         ]
       },
       {

@@ -2,7 +2,6 @@ import { Component, HostListener, OnDestroy, OnInit } from "@angular/core";
 import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { PortfolioService } from "../../services/portfolio.service";
-import { HttpErrorResponse } from "@angular/common/http";
 import { Router } from "@angular/router";
 
 @Component({
@@ -27,10 +26,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   ];
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
-  public selectedProject: IProject = {} as IProject;
   public loading: boolean = false;
-
-  public currentIndex: BehaviorSubject<number> = new BehaviorSubject(0);
 
   private subscription = new Subscription();
 
@@ -42,6 +38,33 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  public getTabs(tabs: ITabs[]): void {
+    const activeTab = tabs.find((tab) => tab.active);
+    if (activeTab) {
+      this.loading = true;
+      this.selectedCategory = activeTab.category;
+    }
+    this.getGallery();
+  }
+
+  public showProjectInfo(project: IProject): void {
+    this.portfolioService.selectedProject.next(project);
+    const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
+    this.router.navigate([`projects/${this.selectedCategory.toLowerCase()}/${titleSlug}`]);
+  }
+
+  private getGallery() {
+    this.loading = true;
+    this.subscription.add(
+      this.portfolioService.getGallery().subscribe({
+        next: (photos: IGallery[]) => {
+          this.loading = false;
+          this.gallery.next(photos);
+        },
+      })
+    );
   }
 
   @HostListener("window:scroll", [])
@@ -62,37 +85,5 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.navBar.forEach((item) => {
       item.active = item.href === currentSection;
     });
-  }
-
-  public getTabs(tabs: ITabs[]): void {
-    const activeTab = tabs.find((tab) => tab.active);
-    if (activeTab) {
-      this.loading = true;
-      this.selectedCategory = activeTab.category;
-    }
-    this.getGallery();
-  }
-
-  public showProjectInfo(project: IProject): void {
-    const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
-    this.selectedProject = project;
-    this.currentIndex.next;
-    this.router.navigate([`/projects/${titleSlug}`]);
-  }
-
-  private getGallery() {
-    this.loading = true;
-    this.subscription.add(
-      this.portfolioService.getGalleryCategory().subscribe({
-        next: (photos: IGallery[]) => {
-          this.loading = false;
-          this.gallery.next(photos);
-        },
-        error: (e: HttpErrorResponse) => {
-          this.loading = false;
-          console.error("Error datos");
-        },
-      })
-    );
   }
 }
