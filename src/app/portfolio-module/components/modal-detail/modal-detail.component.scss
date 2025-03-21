@@ -1,4 +1,4 @@
-.modal {
+.project-detail {
   &__description {
     &--bg-rainbow {
       background: var(--rainbow-bg);
@@ -11,7 +11,7 @@
       padding-bottom: 2px;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;

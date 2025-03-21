@@ -1,8 +1,25 @@
+export interface INavBar {
+  href: string;
+  name: string;
+  active: boolean;
+}
+
+export interface ITypeParams {
+  word: string;
+  speed: number;
+  deleting?: boolean;
+}
+
 export interface ITabs {
   active: boolean;
   name: string;
   id: string;
   category: string;
+}
+
+export interface IProgressBar {
+  percent: number;
+  skill: string;
 }
 
 export interface IGallery {

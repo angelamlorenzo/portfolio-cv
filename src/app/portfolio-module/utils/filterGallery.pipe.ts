@@ -1,8 +1,8 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { IGallery } from '../models/interfaces';
+import { Pipe, PipeTransform } from "@angular/core";
+import { IGallery } from "../models/interfaces";
 
 @Pipe({
-  name: 'filterGallery',
+  name: "filterGallery",
 })
 export class filterGalleryPipe implements PipeTransform {
   transform(photos: IGallery[], sortKey: string): any {

@@ -1,6 +1,6 @@
 <div class="slider">
   <div class="d-flex justify-content-between align-items-center position-relative">
-    <button class="slider__arrow slider__arrow--left btn btn-outline-light" [disabled]="indexValue === 0" (click)="prevSlide()">
+    <button *ngIf="isPrevVisible" class="slider__arrow slider__arrow--left btn btn-outline-light" (click)="prevSlide()">
       <i class="bi bi-chevron-left fs-6"></i>
     </button>
     <div class="slider__container" #sliderContainer>
@@ -8,7 +8,7 @@
         <img [src]="image.src" [alt]="image.altText" class="img-fluid" />
       </div>
     </div>
-    <button class="slider__arrow slider__arrow--right btn btn-outline-light" [disabled]="indexValue === maxIndex" (click)="nextSlide()">
+    <button *ngIf="isNextVisible" class="slider__arrow slider__arrow--right btn btn-outline-light" (click)="nextSlide()">
       <i class="bi bi-chevron-right fs-6"></i>
     </button>
   </div>

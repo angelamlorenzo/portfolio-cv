@@ -1,6 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary px-xl-2">
-  <div class="container-fluid mx-xl-5 px-5">
-    <a class="navbar-brand fs-2 text-secondary" href="#">LOGO</a>
+<nav class="navbar navbar-expand-lg px-xl-2 fixed-top">
+  <div class="container-fluid">
     <button
       class="navbar-toggler"
       type="button"
@@ -14,9 +13,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto fs-5 text-secondary">
-        <a class="nav-link fw-bold" aria-current="page" href="#">Sobre mí</a>
-        <a class="nav-link" href="#">Portfolio</a>
-        <a class="nav-link" href="#">Habilidades</a>
+        <a
+          class="nav-link"
+          [ngClass]="{ 'fw-bold': item.active }"
+          [attr.aria-current]="item.active"
+          [href]="item.href"
+          *ngFor="let item of navBar"
+          (click)="setNavBarOption(item)"
+        >
+          {{ item.name }}
+        </a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Language</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Spanish</a></li>
+          </ul>
+        </li>
       </div>
     </div>
   </div>

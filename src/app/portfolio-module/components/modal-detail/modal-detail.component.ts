@@ -1,24 +1,51 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { moveDownUpStatus } from '../../utils/effects/effects';
-import { IProject } from '../../models/interfaces';
-import { BehaviorSubject } from 'rxjs';
+// modal-detail.component.ts
+import { Component, Input, OnInit, OnDestroy } from "@angular/core";
+import { BehaviorSubject, Subscription } from "rxjs";
+import { IProject } from "../../models/interfaces";
+import { PortfolioService } from "../../services/portfolio.service";
 
 @Component({
-  selector: 'app-modal-detail',
-  templateUrl: './modal-detail.component.html',
-  styleUrls: ['./modal-detail.component.scss'],
-  animations: [moveDownUpStatus],
+  selector: "app-modal-detail",
+  templateUrl: "./modal-detail.component.html",
+  styleUrls: ["./modal-detail.component.scss"],
 })
-export class ModalDetailComponent {
-  @Input() open: boolean = false;
-  @Input() loading: boolean = true;
-  @Input() category: string = '';
-  @Input() selectedProject: IProject = {} as IProject;
-  @Input() currentIndex: BehaviorSubject<number> = new BehaviorSubject(0);
-  @Output() closeModal: EventEmitter<boolean> = new EventEmitter(false);
+export class ModalDetailComponent implements OnInit, OnDestroy {
+  @Input() category: string = "";
+  @Input() selectedProject: BehaviorSubject<IProject> = new BehaviorSubject({} as IProject);
+  public loading: boolean = true;
 
-  public close() {
-    this.closeModal.emit(false);
+  private subscription: Subscription = new Subscription();
+
+  constructor(private portfolioService: PortfolioService) {}
+
+  ngOnInit(): void {
+    this.chooseProject();
+  }
+
+  private chooseProject(): void {
+    this.loading = true;
+
+    setTimeout(() => {
+      const savedProject = sessionStorage.getItem("selectedProject");
+
+      if (savedProject) {
+        this.selectedProject.next(JSON.parse(savedProject));
+        this.loading = false;
+      } else {
+        this.subscription.add(
+          this.portfolioService.selectedProject.subscribe((project) => {
+            this.selectedProject.next(project);
+            sessionStorage.setItem("selectedProject", JSON.stringify(project));
+            this.loading = false;
+          })
+        );
+      }
+    }, 200);
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+    sessionStorage.removeItem("selectedProject");
   }
 
   public goToLink(): void {}
