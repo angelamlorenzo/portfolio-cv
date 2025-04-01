@@ -22,7 +22,7 @@ export class ProjectPageComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.projectTitle = params["projectTitle"];
-      this.projectTitle = params["category"];
+      this.category = params["category"];
     });
 
     this.subscription.add(

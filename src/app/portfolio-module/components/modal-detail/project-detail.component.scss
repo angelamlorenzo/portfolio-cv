@@ -1,0 +1,24 @@
+.project-detail {
+  &__description {
+    &--bg-rainbow {
+      background: var(--rainbow-bg);
+      color: var(--bs-light);
+      letter-spacing: 1px;
+    }
+
+    &--border-rainbow {
+      position: relative;
+      padding-bottom: 2px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15%;
+        height: 2px;
+        background: var(--rainbow-text);
+      }
+    }
+  }
+}

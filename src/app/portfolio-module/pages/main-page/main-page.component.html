@@ -9,9 +9,9 @@
   <div class="main-page__skills" id="skills">
     <app-progress-bars></app-progress-bars>
   </div>
-  <div class="row my-5 mx-xl-5 px-5">
+  <div class="row my-5 mx-xl-5 px-xl-5 px-4">
     <div class="main-page__gallery" id="portfolio">
-      <h2 class="text-center mt-2 mb-5">Portfolio</h2>
+      <h2 class="text-center mb-5">Portfolio</h2>
       <app-tabs-gallery [tabs]="tabsItem" [selectedCategory]="selectedCategory" (actionSelectTab)="getTabs($event)"></app-tabs-gallery>
       <div class="my-5" *ngIf="loading"><app-spinner></app-spinner></div>
       <div *ngIf="!loading">
@@ -25,6 +25,6 @@
   </div>
   <div class="main-page__resume mt-5 bg-light" id="resume"><app-work-experience></app-work-experience></div>
   <div class="bg-dark-subtle text-center py-3">
-    <small class="text-light">Lorem ipsum</small>
+    <small class="text-light">&copy; {{ dateYear }}. Todos los derechos reservados.</small>
   </div>
 </div>
