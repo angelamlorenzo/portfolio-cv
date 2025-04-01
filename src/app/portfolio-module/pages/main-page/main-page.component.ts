@@ -28,6 +28,8 @@ export class MainPageComponent implements OnInit, OnDestroy {
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
   public loading: boolean = false;
 
+  public dateYear = new Date().getFullYear();
+
   private subscription = new Subscription();
 
   constructor(public portfolioService: PortfolioService, public router: Router) {}
@@ -52,7 +54,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
   public showProjectInfo(project: IProject): void {
     this.portfolioService.selectedProject.next(project);
     const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
-    this.router.navigate([`projects/${this.selectedCategory.toLowerCase()}/${titleSlug}`]);
+    this.router.navigate([`portfolio/${this.selectedCategory.toLowerCase()}/${titleSlug}`]);
   }
 
   private getGallery() {
@@ -67,7 +69,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
     );
   }
 
-  @HostListener("window:scroll", [])
+  /*@HostListener("window:scroll", [])
   onWindowScroll(): void {
     let currentSection = "";
 
@@ -85,5 +87,5 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.navBar.forEach((item) => {
       item.active = item.href === currentSection;
     });
-  }
+  }*/
 }

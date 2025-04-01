@@ -1,25 +1,31 @@
-// modal-detail.component.ts
 import { Component, Input, OnInit, OnDestroy } from "@angular/core";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { IProject } from "../../models/interfaces";
 import { PortfolioService } from "../../services/portfolio.service";
+import { ActivatedRoute } from "@angular/router";
+import { ViewportScroller } from "@angular/common";
 
 @Component({
-  selector: "app-modal-detail",
-  templateUrl: "./modal-detail.component.html",
-  styleUrls: ["./modal-detail.component.scss"],
+  selector: "app-project-detail",
+  templateUrl: "./project-detail.component.html",
+  styleUrls: ["./project-detail.component.scss"],
 })
-export class ModalDetailComponent implements OnInit, OnDestroy {
+export class ProjectDetailComponent implements OnInit, OnDestroy {
   @Input() category: string = "";
   @Input() selectedProject: BehaviorSubject<IProject> = new BehaviorSubject({} as IProject);
   public loading: boolean = true;
 
   private subscription: Subscription = new Subscription();
 
-  constructor(private portfolioService: PortfolioService) {}
+  constructor(private portfolioService: PortfolioService, private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
 
   ngOnInit(): void {
     this.chooseProject();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+    sessionStorage.removeItem("selectedProject");
   }
 
   private chooseProject(): void {
@@ -41,11 +47,6 @@ export class ModalDetailComponent implements OnInit, OnDestroy {
         );
       }
     }, 200);
-  }
-
-  ngOnDestroy(): void {
-    this.subscription.unsubscribe();
-    sessionStorage.removeItem("selectedProject");
   }
 
   public goToLink(): void {}

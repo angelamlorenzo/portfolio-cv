@@ -5,7 +5,7 @@ import { MainPageComponent } from "./pages/main-page/main-page.component";
 import { TabsGalleryComponent } from "./components/tabs-gallery/tabs-gallery.component";
 import { filterGalleryPipe } from "./utils/filterGallery.pipe";
 import { SlideComponent } from "./components/slide/slide.component";
-import { ModalDetailComponent } from "./components/modal-detail/modal-detail.component";
+import { ProjectDetailComponent } from "./components/modal-detail/project-detail.component";
 import { SpinnerComponent } from "./components/spinner/spinner.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CoverComponent } from "./components/cover/cover.component";
@@ -18,7 +18,7 @@ import { AppRoutingModule } from "../app-routing.module";
 
 const routes: Routes = [
   { path: "", component: MainPageComponent },
-  { path: "projects/:category/:title", component: ProjectPageComponent },
+  { path: "portfolio/:category/:title", component: ProjectPageComponent },
 ];
 
 @NgModule({
@@ -28,7 +28,7 @@ const routes: Routes = [
     TabsGalleryComponent,
     filterGalleryPipe,
     SlideComponent,
-    ModalDetailComponent,
+    ProjectDetailComponent,
     SpinnerComponent,
     NavbarComponent,
     CoverComponent,
