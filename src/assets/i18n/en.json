@@ -1,0 +1,56 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "resume": "Resume",
+    "language": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "cover": {
+    "hello": "Hello!",
+    "introduction": "My name is Ángela",
+    "andIm": "and I'm a"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "paragraphOne": "I am a multidisciplinary professional driven by curiosity, which makes me a versatile creator always eager to explore new ways of problem-solving, creating and innovating.",
+    "paragraphTwo": "My passion for design and creativity leads me to constantly discover new forms of expression, whether through visual identities, editorial projects, or digital experiences. I love combining creativity and functionality to deliver unique solutions that connect with the end user, effectively conveying the intended message. If you’d like to collaborate or simply exchange ideas, I’m here to help bring your projects to life!",
+    "downloadCvButton": "Download CV"
+  },
+  "skills": {
+    "title": "Skills & Tools"
+  },
+  "resume": {
+    "title": "Resume",
+    "workExperience": {
+      "title": "Work Experience",
+      "juniorDev": "Junior Front-End Developer",
+      "today": "Currently",
+      "graphicDesignerWeb": "Graphic and Web Designer",
+      "graphicDesignerIllustration": "Graphic Designer and Illustrator",
+      "graphicWebIllustration": "Graphic/Web Designer and Illustrator",
+      "vintegrisFront": "Development of the digital identity solution nebulaSUITE through microsites using Angular and Bootstrap.",
+      "vintegris": "Branding, social media content, brochures, dossiers, presentations, and product datasheets, stationery, image editing. UI/UX, maintenance, and management of the company's websites using WordPress. Digital illustration. Design and layout of newsletters and email marketing.",
+      "mediaMotive": "Layout of landings in CSS and HTML with Bootstrap. Creation of web advertisements with Google Web Designer, Photoshop, and Illustrator.",
+      "freelance": "Illustrations and graphic design focused on multimedia projects. Editorial design. Branding. Creation of WordPress websites.",
+      "herder": "Graphic design for web and social media, editorial design (covers, layout), catalogs, posters, email marketing. Interface (UI) design for the Herder Subscription Portal. Branding development, content for the web and social media, and illustrations for Filosofía & Co.",
+      "xanino": "Design of posters, flyers, brochures, icons, graphic materials for social media, vector and traditional illustration."
+    },
+    "education": {
+      "title": "Education",
+      "certProf": "Development of Multimedia Editorial Products",
+      "certProfText": "Professional Certification, Level 3",
+      "cfgs": "CFGS Plastic Arts and Design in Illustration",
+      "degree": "Bachelor's Degree in Fine Arts",
+      "illustration": "Techniques Applied to Illustration",
+      "typographic": "Typographic Architecture and Layout",
+      "labDig": "Creation, Editing, and Promotion of Digital Content and Services (LABDig)"
+    },
+    "seeLess": "See less",
+    "seeMore": "See more"
+  },
+  "copyright": "All rights reserved."
+}

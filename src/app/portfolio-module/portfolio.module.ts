@@ -5,7 +5,7 @@ import { MainPageComponent } from "./pages/main-page/main-page.component";
 import { TabsGalleryComponent } from "./components/tabs-gallery/tabs-gallery.component";
 import { filterGalleryPipe } from "./utils/filterGallery.pipe";
 import { SlideComponent } from "./components/slide/slide.component";
-import { ProjectDetailComponent } from "./components/modal-detail/project-detail.component";
+import { ProjectDetailComponent } from "./components/project-detail/project-detail.component";
 import { SpinnerComponent } from "./components/spinner/spinner.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CoverComponent } from "./components/cover/cover.component";
@@ -14,7 +14,7 @@ import { WorkExperienceComponent } from "./components/work-experience/work-exper
 import { AboutMeComponent } from "./components/about-me/about-me.component";
 import { RouterModule, Routes } from "@angular/router";
 import { ProjectPageComponent } from "./pages/project-page/project-page.component";
-import { AppRoutingModule } from "../app-routing.module";
+import { TranslateModule } from "@ngx-translate/core"; // Asegúrate de que está importado
 
 const routes: Routes = [
   { path: "", component: MainPageComponent },
@@ -37,7 +37,17 @@ const routes: Routes = [
     AboutMeComponent,
     ProjectPageComponent,
   ],
-  imports: [CommonModule, RouterModule.forChild(routes)],
-  exports: [GalleryComponent, MainPageComponent, ProjectPageComponent, RouterModule],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    TranslateModule, // Importa TranslateModule aquí también
+  ],
+  exports: [
+    GalleryComponent,
+    MainPageComponent,
+    TranslateModule, // Si lo necesitas en otros módulos, expórtalo también
+    ProjectPageComponent,
+    RouterModule,
+  ],
 })
 export class PortfolioModule {}

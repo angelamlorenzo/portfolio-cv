@@ -2,20 +2,20 @@
   <div class="progress-bars__parallax">
     <div class="container progress-bars__parallax py-5 px-4 p-xl-5">
       <div class="row">
-        <h2 class="text-center mb-5 text-light">Skills & Tools</h2>
+        <h2 class="text-center mb-5 text-light">{{ title | translate }}</h2>
         <div class="col-12 col-md-6 gx-5">
-          <div *ngFor="let progress of progressBar" class="mb-3">
-            <p class="mb-1 text-light">{{ progress.skill }}</p>
-            <div class="progress" role="progressbar" [attr.aria-valuenow]="progress.percent" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar" [style.width.%]="progress.percent"></div>
+          <div *ngFor="let skillDev of skillsDev" class="mb-3">
+            <p class="mb-1 text-light">{{ skillDev.skill }}</p>
+            <div class="progress" role="progressbar" [attr.aria-valuenow]="skillDev.percent" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" [style.width.%]="skillDev.percent"></div>
             </div>
           </div>
         </div>
         <div class="col-12 col-md-6 gx-5">
-          <div *ngFor="let progress of progressBar" class="mb-3">
-            <p class="mb-1 text-light fs">{{ progress.skill }}</p>
-            <div class="progress" role="progressbar" [attr.aria-valuenow]="progress.percent" aria-valuemin="0" aria-valuemax="100">
-              <div class="progress-bar" [style.width.%]="progress.percent"></div>
+          <div *ngFor="let skillDesign of skillsDesign" class="mb-3">
+            <p class="mb-1 text-light">{{ skillDesign.skill }}</p>
+            <div class="progress" role="progressbar" [attr.aria-valuenow]="skillDesign.percent" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" [style.width.%]="skillDesign.percent"></div>
             </div>
           </div>
         </div>

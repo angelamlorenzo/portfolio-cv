@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Experience } from "../../models/interfaces";
 
 @Component({
   selector: "app-work-experience",
@@ -6,6 +7,78 @@ import { Component } from "@angular/core";
   styleUrls: ["./work-experience.component.scss"],
 })
 export class WorkExperienceComponent {
+  public title: string = "resume.title";
+  public workExperience: string = "resume.workExperience.title";
+  public education: string = "resume.education.title";
+  public today: string = "resume.workExperience.today";
+  public seeLess: string = "resume.seeLess";
+  public seeMore: string = "resume.seeMore";
+
+  public experiences: Experience[] = [
+    {
+      title: "resume.workExperience.juniorDev",
+      company: "Víntegris",
+      period: `2023-${this.today}`,
+      description: "resume.workExperience.vintegrisFront",
+    },
+    {
+      title: "resume.workExperience.graphicDesignerWeb",
+      company: "Víntegris",
+      period: "2020-2023",
+      description: "resume.workExperience.vintegris",
+    },
+    {
+      title: "resume.workExperience.graphicDesignerWeb",
+      company: "Media Motive",
+      period: "2019-2020",
+      description: "resume.workExperience.mediaMotive",
+    },
+    {
+      title: "resume.workExperience.graphicWebIllustration",
+      company: "Freelance",
+      period: "2018-2019",
+      description: "resume.workExperience.freelance",
+    },
+    {
+      title: "resume.workExperience.graphicDesignerIllustration",
+      company: "Herder Editorial",
+      period: "2017",
+      description: "resume.workExperience.herder",
+    },
+    {
+      title: "resume.workExperience.graphicDesignerIllustration",
+      company: "Xaniño, Comunicación Gráfica",
+      period: "2016",
+      description: "resume.workExperience.xanino",
+    },
+  ];
+
+  public educationExperiences: Experience[] = [
+    {
+      title: "resume.education.certProf",
+      period: "2019",
+      institution: "Training Tutor",
+    },
+    {
+      title: "resume.education.cfgs",
+      period: "2014-2016",
+      institution: "EASD Pablo Picasso",
+    },
+    {
+      title: "resume.education.degree",
+      period: "2010-2014",
+      institution: "Universidade de Vigo",
+    },
+  ];
+
+  public complementaryEducation: Experience[] = [
+    {
+      title: "resume.education.illustration",
+      period: "2019",
+      institution: "CIFO L'Hospitalet",
+    },
+  ];
+
   public isWorkExperienceExpanded: boolean = false;
   public isEducationExperienceExpanded: boolean = false;
 

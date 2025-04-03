@@ -1,6 +1,6 @@
 <div class="project-detail" *ngIf="selectedProject | async as selectedProject">
   <div class="row my-4 mx-xl-5 px-5">
-    <div class="col-12 mb-3">
+    <div class="col-12 my-3">
       <a [routerLink]="['/']" [fragment]="'portfolio'" queryParamsHandling="preserve" class="text-secondary text-decoration-none"
         ><i class="bi bi-chevron-left">Go back to main page</i></a
       >
@@ -8,12 +8,12 @@
       <span class="project-detail__description--bg-rainbow badge">{{ category | uppercase }}</span>
       <p class="mt-0 d-inline"><i class="bi bi-dot ms-1"></i> {{ selectedProject.date }}</p>
     </div>
-    <div class="col-xxl-8">
+    <div class="col-xxl-8 mb-4">
       <div class="my-5" *ngIf="loading"><app-spinner></app-spinner></div>
       <app-slide *ngIf="!loading" [images]="selectedProject.images"></app-slide>
     </div>
     <div class="col-xxl-4 ps-xxl-5">
-      <p class="mb-4 fst-italic fs-2 fw-bold rainbow-text">{{ selectedProject.description }}</p>
+      <h3 class="mb-4 fst-italic fw-bold rainbow-text">{{ selectedProject.description }}</h3>
       <p>{{ selectedProject.paragraphOne }}</p>
       <p *ngIf="selectedProject.paragraphTwo">
         {{ selectedProject.paragraphTwo }}

@@ -1,116 +1,53 @@
 <div class="work-experience bg-light">
   <div class="container py-5">
     <div class="row justify-content-evenly px-4 px-lg-0">
-      <h2 class="text-center mb-5">Resume</h2>
+      <h2 class="text-center mb-5">{{ title | translate }}</h2>
 
+      <!-- Columna de Experiencia Laboral -->
       <div class="col-12 col-lg-5 p-0 mb-3">
         <div class="bg-white shadow-sm rounded py-4 px-5">
-          <h4 class="rainbow-text mb-0">Work Experience</h4>
+          <h4 class="rainbow-text mb-0">{{ workExperience | translate }}</h4>
           <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
-          <div class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Work Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
 
-          <div class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Work Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
-
-          <div *ngIf="isWorkExperienceExpanded" class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Work Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
-
-          <div *ngIf="isWorkExperienceExpanded" class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Work Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
+          <div *ngFor="let experience of experiences; let i = index">
+            <ng-container *ngIf="i < 3 || isWorkExperienceExpanded">
+              <div class="mb-3">
+                <p class="fs-5 fw-semibold mb-0">{{ experience.title | translate }}</p>
+                <p class="fs-7 mb-2">{{ experience.company }} | {{ experience.period | translate }}</p>
+                <p>{{ experience.description! | translate }}</p>
+                <hr />
+              </div>
+            </ng-container>
           </div>
 
           <p class="mb-0 text-end">
             <button class="btn btn-link text-secondary text-decoration-none" (click)="toggleWorkExperience()">
-              {{ isWorkExperienceExpanded ? "See less" : "See more" }}
+              {{ (isWorkExperienceExpanded ? "resume.seeLess" : "resume.seeMore") | translate }}
               <i class="bi" [ngClass]="isWorkExperienceExpanded ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
             </button>
           </p>
         </div>
       </div>
 
+      <!-- Columna de Educación -->
       <div class="col-12 col-lg-5 p-0">
         <div class="bg-white shadow-sm rounded py-4 px-5">
-          <h4 class="rainbow-text mb-0">Education Experience</h4>
+          <h4 class="rainbow-text mb-0">{{ education | translate }}</h4>
           <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
-          <div class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Education Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
 
-          <div class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Education Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
-
-          <div *ngIf="isEducationExperienceExpanded" class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Education Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
-          </div>
-
-          <div *ngIf="isEducationExperienceExpanded" class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-5 fw-semibold mb-1">Education Position</p>
-              <p class="fst-italic fs-7 mb-1">2020-2025</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nunc sed arcu consequat ultricies posuere sed ligula.
-            </p>
-            <hr />
+          <div *ngFor="let edu of educationExperiences; let j = index">
+            <ng-container *ngIf="j < 2 || isEducationExperienceExpanded">
+              <div class="mb-3">
+                <p class="fs-5 fw-semibold mb-1">{{ edu.title | translate }}</p>
+                <p class="fs-7 mb-1">{{ edu.period }} | {{ edu.institution }}</p>
+                <hr />
+              </div>
+            </ng-container>
           </div>
 
           <p class="mb-0 text-end">
-            <button class="btn text-secondary text-decoration-none" (click)="toggleEducationExperience()">
-              {{ isEducationExperienceExpanded ? "See less" : "See more" }}
+            <button class="btn btn-link text-secondary text-decoration-none" (click)="toggleEducationExperience()">
+              {{ (isEducationExperienceExpanded ? "resume.seeLess" : "resume.seeMore") | translate }}
               <i class="bi" [ngClass]="isEducationExperienceExpanded ? 'bi-chevron-up' : 'bi-chevron-down'"></i>
             </button>
           </p>

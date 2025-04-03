@@ -11,13 +11,14 @@ import { Router } from "@angular/router";
 })
 export class MainPageComponent implements OnInit, OnDestroy {
   public navBar: INavBar[] = [
-    { href: "#about", name: "About me", active: true },
-    { href: "#skills", name: "Skills", active: false },
-    { href: "#portfolio", name: "Portfolio", active: false },
-    { href: "#resume", name: "Resume", active: false },
+    { href: "#about", name: "header.aboutMe", active: true },
+    { href: "#skills", name: "header.skills", active: false },
+    { href: "#portfolio", name: "header.portfolio", active: false },
+    { href: "#resume", name: "header.resume", active: false },
   ];
 
   public selectedCategory: string = "Animales";
+  public copyright: string = "copyright";
 
   public tabsItem: ITabs[] = [
     { active: true, name: "Animales", id: "animales", category: "Animales" },
@@ -69,7 +70,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
     );
   }
 
-  /*@HostListener("window:scroll", [])
+  @HostListener("window:scroll", [])
   onWindowScroll(): void {
     let currentSection = "";
 
@@ -87,5 +88,5 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.navBar.forEach((item) => {
       item.active = item.href === currentSection;
     });
-  }*/
+  }
 }

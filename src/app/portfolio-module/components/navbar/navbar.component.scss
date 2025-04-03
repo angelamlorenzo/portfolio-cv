@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+  .navbar-collapse {
+    opacity: 0;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  }
+
+  .navbar-collapse.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    margin-top: 6px;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+}

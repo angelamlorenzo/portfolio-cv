@@ -45,3 +45,11 @@ export interface IImage {
   src: string;
   altText: string;
 }
+
+export interface Experience {
+  title: string;
+  company?: string;
+  institution?: string;
+  period: string;
+  description?: string;
+}

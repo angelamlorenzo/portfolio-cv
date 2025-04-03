@@ -1,0 +1,56 @@
+{
+  "header": {
+    "aboutMe": "Sobre mí",
+    "skills": "Habilidades",
+    "portfolio": "Portfolio",
+    "resume": "Currículum",
+    "language": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "cover": {
+    "hello": "¡Hola!",
+    "introduction": "Mi nombre es Ángela",
+    "andIm": "y soy"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "paragraphOne": "Soy una trabajadora multidisciplinar cuyo motor es la curiosidad, lo que me convierte en una profesional versátil, siempre dispuesta a explorar nuevas formas de crear, innovar y resolver.",
+    "paragraphTwo": "Mi pasión por el diseño y la creatividad me lleva a descubrir constantemente nuevas formas de expresión, ya sea a través de identidades visuales, proyectos editoriales o experiencias digitales. Me encanta combinar creatividad y funcionalidad para ofrecer soluciones únicas que conecten con el usuario final, transmitiendo el mensaje para el que han sido creadas. Si quieres colaborar o simplemente intercambiar ideas, ¡estoy aquí para ayudarte a dar vida a tus proyectos!",
+    "downloadCvButton": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades y herramientas"
+  },
+  "resume": {
+    "title": "Currículum",
+    "workExperience": {
+      "title": "Experiencia laboral",
+      "juniorDev": "Desarrolladora Front End Junior",
+      "today": "Actual.",
+      "graphicDesignerWeb": "Diseñadora Gráfica y Web",
+      "graphicDesignerIllustration": "Diseñadora Gráfica e Ilustradora",
+      "graphicWebIllustration": "Diseñadora Gráfica/Web e Ilustradora",
+      "vintegrisFront": "Desarrollo de la solución de identidad digital nebulaSUITE mediante microsites con Angular y Bootstrap.",
+      "vintegris": "Branding, contenido para RRSS, folletos, dossieres, presentaciones y datasheets de productos, papelería, edición de imagen. UI/UX, mantenimiento y gestión de las webs de la compañía con WordPress. Ilustración digital. Diseño y maquetación de newsletters y email marketing.",
+      "mediaMotive": "Maquetación de landings en CSS y HTML con Bootstrap. Creación de publicidad web con Google Web Designer, Photoshop e Illustrator.",
+      "freelance": "Ilustraciones y diseño gráfico enfocado a proyectos multimedia. Diseño editorial. Branding. Creación de páginas en WordPress.",
+      "herder": "Diseño de material gráfico para web y RRSS, diseño editorial (portadas,maquetación), catálogos, cartelería, email marketing. Diseño de Interfaz (UI) del Portal de Suscripción de Herder. Desarrollo de Branding, contenido para web y redes e ilustraciones para Filosofía & Co.",
+      "xanino": "Diseño de cartelería, flyers, folletos, iconos, material gráfico para RRSS, ilustración vectorial y tradicional."
+    },
+    "education": {
+      "title": "Educación",
+      "certProf": "Desarrollo de Productos Editoriales Multimedia",
+      "certProfText": "Certificado de Profesionalidad, nvl. 3",
+      "cfgs": "CFGS en Artes Plásticas y Diseño en Ilustración",
+      "degree": "Grado en Bellas Artes",
+      "illustration": "Técnicas aplicadas a la ilustración",
+      "typographic": "Arquitectura tipográfica y maquetación",
+      "labDig": "Creación, edición y promoción de contenidos y servicios digitales (LABDig)"
+    },
+    "seeLess": "Ver menos",
+    "seeMore": "Ver más"
+  },
+  "copyright": "Todos los derechos reservados."
+}

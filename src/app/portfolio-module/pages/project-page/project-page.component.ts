@@ -2,7 +2,7 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { PortfolioService } from "../../services/portfolio.service";
-import { IProject } from "../../models/interfaces";
+import { INavBar, IProject } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 
 @Component({
