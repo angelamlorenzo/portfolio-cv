@@ -12,7 +12,7 @@ export class NavbarComponent {
   @Input() logoUrl: string = "";
   @Output() selectMenuItem: EventEmitter<INavBar> = new EventEmitter();
 
-  public currentLanguage: string = "en";
+  public currentLanguage: string = "es";
 
   constructor(private translate: TranslateService) {}
 

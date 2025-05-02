@@ -8,7 +8,15 @@
   }
 
   &__imgs {
-    flex: 0 0 100%;
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+  }
+
+  &__imgs img {
+    width: 100%;
+    max-height: 670px;
+    height: auto;
   }
 
   &__arrow {

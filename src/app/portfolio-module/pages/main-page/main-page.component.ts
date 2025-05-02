@@ -3,6 +3,7 @@ import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { PortfolioService } from "../../services/portfolio.service";
 import { Router } from "@angular/router";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-main-page",
@@ -17,12 +18,12 @@ export class MainPageComponent implements OnInit, OnDestroy {
     { href: "#resume", name: "header.resume", active: false },
   ];
 
-  public selectedCategory: string = "Animales";
+  public selectedCategory: string = "Editorial";
   public copyright: string = "copyright";
 
   public tabsItem: ITabs[] = [
-    { active: true, name: "Animales", id: "animales", category: "Animales" },
-    { active: false, name: "Flores", id: "flores", category: "Flores" },
+    { active: true, name: "Editorial", id: "editorial", category: "Editorial" },
+    { active: false, name: "Diseño Gráfico", id: "diseno-grafico", category: "Diseño Gráfico" },
     { active: false, name: "Otros", id: "otros", category: "Otros" },
   ];
 
@@ -33,7 +34,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   private subscription = new Subscription();
 
-  constructor(public portfolioService: PortfolioService, public router: Router) {}
+  constructor(public portfolioService: PortfolioService, public router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
     this.getGallery();
@@ -48,14 +49,20 @@ export class MainPageComponent implements OnInit, OnDestroy {
     if (activeTab) {
       this.loading = true;
       this.selectedCategory = activeTab.category;
+      console.log(this.selectedCategory);
     }
     this.getGallery();
   }
 
   public showProjectInfo(project: IProject): void {
+    const translatedCategory = this.translate.instant(`portfolio.editorial.category`);
+    const translatedTitle = this.translate.instant(`portfolio.editorial.toTheMoon.title`);
+
+    const categoryWithHyphens = translatedCategory.replace(/\s+/g, "-").toLowerCase();
+    const titleWithHyphens = translatedTitle.replace(/\s+/g, "-").toLowerCase();
+
     this.portfolioService.selectedProject.next(project);
-    const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
-    this.router.navigate([`portfolio/${this.selectedCategory.toLowerCase()}/${titleSlug}`]);
+    this.router.navigate([`/portfolio/${categoryWithHyphens}/${titleWithHyphens}`]);
   }
 
   private getGallery() {

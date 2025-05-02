@@ -1,30 +1,15 @@
 [
   {
-    "category": "Animales",
+    "category": "Editorial",
     "projects": [
       {
-        "title": "Perro muy majo",
-        "previewImage": "https://picsum.photos/id/237/500/350",
-        "date": "2024",
-        "description": "Un cachorro de labrador siendo un animal muy majo",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
-        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
-        "images": [
-          { "src": "https://picsum.photos/id/237/1400/800", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "https://picsum.photos/id/82/1400/800", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "https://picsum.photos/id/175/1400/800", "altText": "Lorem ipsum dolor sit amet 3" }
-        ],
-        "url": "www.urlfake.com",
-        "urlName": "urlFake"
-      },
-      {
-        "title": "Gaviota con cara de susto",
+        "title": "portfolio.editorial.bankMagazine.title",
         "previewImage": "https://picsum.photos/id/275/500/350",
-        "date": "2008",
-        "description": "Una gaviota que, a pesar de que no hay viento, tiene tribulaciones vitales de gran magnitud",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae. Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "date": "2020",
+        "description": "portfolio.editorial.bankMagazine.description",
+        "paragraphOne": "portfolio.editorial.bankMagazine.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.bankMagazine.paragraphTwo",
+        "technicalSpecs": "portfolio.editorial.bankMagazine.technicalSpecs",
         "images": [
           { "src": "https://picsum.photos/id/275/1400/900", "altText": "Lorem ipsum dolor sit amet 1" },
           { "src": "https://picsum.photos/id/237/1400/900", "altText": "Lorem ipsum dolor sit amet 2" },
@@ -32,14 +17,61 @@
         ]
       },
       {
-        "title": "Oso peposo",
+        "title": "portfolio.editorial.rabelo.title",
         "previewImage": "https://picsum.photos/id/433/500/350",
-        "date": "2020",
-        "description": "Un oso con la misma cara de wadafak que pongo yo al ver el board de tareas",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
-        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "date": "2019",
+        "description": "portfolio.editorial.rabelo.description",
+        "paragraphOne": "portfolio.editorial.rabelo.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.rabelo.paragraphTwo",
+        "technicalSpecs": "portfolio.editorial.rabelo.technicalSpecs",
+        "images": [
+          { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "portfolio.editorial.toTheMoon.title",
+        "previewImage": "assets/img/to-the-moon/Portada_fly-me-to-the-moon.jpg",
+        "date": "2018",
+        "description": "portfolio.editorial.toTheMoon.description",
+        "paragraphOne": "portfolio.editorial.toTheMoon.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.toTheMoon.paragraphTwo",
+        "paragraphThree": "portfolio.editorial.toTheMoon.paragraphThree",
+        "technicalSpecs": "portfolio.editorial.toTheMoon.technicalSpecs",
+        "images": [
+          { "src": "assets/img/to-the-moon/Portada_fly-me-to-the-moon.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/to-the-moon/Cambio-seccion-01.jpg", "altText": "Cambio sección" },
+          { "src": "assets/img/to-the-moon/Laika.jpg", "altText": "Laika" },
+          { "src": "assets/img/to-the-moon/american-spacewalk.jpg", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/to-the-moon/Valentina-Tereshkova.jpg", "altText": "Valentina Tereshkova" },
+          { "src": "assets/img/to-the-moon/apollo-11.jpg", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "portfolio.editorial.hellWillBeSweet.title",
+        "previewImage": "assets/img/to-the-moon/Portada_fly-me-to-the-moon.jpg",
+        "date": "2016",
+        "description": "portfolio.editorial.hellWillBeSweet.description",
+        "paragraphOne": "portfolio.editorial.hellWillBeSweet.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.hellWillBeSweet.paragraphTwo",
+        "paragraphThree": "portfolio.editorial.hellWillBeSweet.paragraphThree",
+        "technicalSpecs": "portfolio.editorial.hellWillBeSweet.technicalSpecs",
+        "images": [
+          { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "portfolio.editorial.folieaDeux.title",
+        "previewImage": "assets/img/to-the-moon/Portada_fly-me-to-the-moon.jpg",
+        "date": "2013",
+        "description": "portfolio.editorial.folieaDeux.description",
+        "paragraphOne": "portfolio.editorial.folieaDeux.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.folieaDeux.paragraphTwo",
+        "paragraphThree": "portfolio.editorial.folieaDeux.paragraphThree",
+        "technicalSpecs": "portfolio.editorial.folieaDeux.technicalSpecs",
         "images": [
           { "src": "https://picsum.photos/id/433/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
           { "src": "https://picsum.photos/id/275/1500/900", "altText": "Lorem ipsum dolor sit amet 2" },
@@ -49,34 +81,60 @@
     ]
   },
   {
-    "category": "Flores",
+    "category": "Diseño Gráfico",
     "projects": [
       {
-        "title": "Campanilla violeta",
+        "title": "portfolio.graphicDesign.ensign.title",
         "previewImage": "https://picsum.photos/id/152/500/350",
-        "date": "2021",
-        "description": "Describe here the project with two or three sentences that sound catching!",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
-        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "date": "2022",
+        "description": "portfolio.graphicDesign.ensign.description",
+        "paragraphOne": "portfolio.graphicDesign.ensign.paragraphOne",
+        "paragraphTwo": "portfolio.graphicDesign.ensign.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicDesign.ensign.technicalSpecs",
         "images": [
           { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
           { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
         ]
       },
       {
-        "title": "Flor de cerezo",
-        "previewImage": "https://picsum.photos/id/82/500/350",
-        "date": "2020",
-        "description": "Describe here the project with two or three sentences that sound catching!",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
-        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
+        "title": "portfolio.graphicDesign.newsletters.title",
+        "previewImage": "https://picsum.photos/id/152/500/350",
+        "date": "2021-2023",
+        "description": "portfolio.graphicDesign.newsletters.description",
+        "paragraphOne": "portfolio.graphicDesign.newsletters.paragraphOne",
+        "paragraphTwo": "portfolio.graphicDesign.newsletters.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicDesign.newsletters.technicalSpecs",
         "images": [
-          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
+        "title": "portfolio.graphicDesign.languageCatalog.title",
+        "previewImage": "https://picsum.photos/id/152/500/350",
+        "date": "2018",
+        "description": "portfolio.graphicDesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicDesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicDesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicDesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.graphicDesign.enGroupIdentity.title",
+        "previewImage": "https://picsum.photos/id/152/500/350",
+        "date": "2018",
+        "description": "portfolio.graphicDesign.enGroupIdentity.description",
+        "paragraphOne": "portfolio.graphicDesign.enGroupIdentity.paragraphOne",
+        "paragraphTwo": "portfolio.graphicDesign.enGroupIdentity.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicDesign.enGroupIdentity.technicalSpecs",
+        "images": [
+          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
         ]
       }
     ]

@@ -53,3 +53,8 @@ export interface Experience {
   period: string;
   description?: string;
 }
+
+export interface Languages {
+  language: string;
+  level: string;
+}

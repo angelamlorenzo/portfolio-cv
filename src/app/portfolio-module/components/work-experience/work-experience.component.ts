@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Experience } from "../../models/interfaces";
+import { Experience, Languages } from "../../models/interfaces";
 
 @Component({
   selector: "app-work-experience",
@@ -10,15 +10,16 @@ export class WorkExperienceComponent {
   public title: string = "resume.title";
   public workExperience: string = "resume.workExperience.title";
   public education: string = "resume.education.title";
-  public today: string = "resume.workExperience.today";
+  public languages: string = "resume.languages.title";
   public seeLess: string = "resume.seeLess";
   public seeMore: string = "resume.seeMore";
+  public complementaryEducationTitle: string = "resume.education.complementaryTitle";
 
   public experiences: Experience[] = [
     {
       title: "resume.workExperience.juniorDev",
       company: "Víntegris",
-      period: `2023-${this.today}`,
+      period: `2023-`,
       description: "resume.workExperience.vintegrisFront",
     },
     {
@@ -77,6 +78,22 @@ export class WorkExperienceComponent {
       period: "2019",
       institution: "CIFO L'Hospitalet",
     },
+    {
+      title: "resume.education.illustration",
+      period: "2019",
+      institution: "CIFO L'Hospitalet",
+    },
+    {
+      title: "resume.education.illustration",
+      period: "2019",
+      institution: "CIFO L'Hospitalet",
+    },
+  ];
+
+  public languagesList: Languages[] = [
+    { language: "resume.languages.spanishGalician", level: "resume.languages.native" },
+    { language: "resume.languages.english", level: "resume.languages.mediumHigh" },
+    { language: "resume.languages.germanCatalan", level: "resume.languages.basic" },
   ];
 
   public isWorkExperienceExpanded: boolean = false;

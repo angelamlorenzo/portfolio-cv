@@ -37,17 +37,7 @@ const routes: Routes = [
     AboutMeComponent,
     ProjectPageComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    TranslateModule, // Importa TranslateModule aquí también
-  ],
-  exports: [
-    GalleryComponent,
-    MainPageComponent,
-    TranslateModule, // Si lo necesitas en otros módulos, expórtalo también
-    ProjectPageComponent,
-    RouterModule,
-  ],
+  imports: [CommonModule, RouterModule.forChild(routes), TranslateModule],
+  exports: [GalleryComponent, MainPageComponent, TranslateModule, ProjectPageComponent, RouterModule],
 })
 export class PortfolioModule {}

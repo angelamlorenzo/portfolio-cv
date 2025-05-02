@@ -23,17 +23,29 @@
   "skills": {
     "title": "Skills & Tools"
   },
+  "portfolio": {
+    "editorial": {
+      "category": "Editorial",
+      "toTheMoon": {
+        "title": "Fly me to the Moon",
+        "description": "Esta propuesta sobre la Carrera Espacial surgió cuando se acercaba el 49º aniversario de la llegada del hombre a la Luna.",
+        "paragraphOne": "Decidí hacer una maquetación con una estructura muy sólida, acorde también con la tipografía. En cuanto a la gama de colores, mi intención era representar la polaridad de la época usando colores de los trajes espaciales (Azul para EE.UU., en referencia al traje Apolo A-5L y naranja para la URSS, debido al traje de Yuri Gagarin).",
+        "paragraphTwo": "Los textos son noticias originales de la época.",
+        "technicalSpecs": "56 páginas en papel estucado brillante de 150 gr. A5 (210 × 148 mm).<br>Encuadernación rústica, portada en estucado mate de 350 gr."
+      }
+    },
+    "goBack": "Go back to the main page"
+  },
   "resume": {
     "title": "Resume",
     "workExperience": {
-      "title": "Work Experience",
+      "title": "Career",
       "juniorDev": "Junior Front-End Developer",
-      "today": "Currently",
       "graphicDesignerWeb": "Graphic and Web Designer",
       "graphicDesignerIllustration": "Graphic Designer and Illustrator",
       "graphicWebIllustration": "Graphic/Web Designer and Illustrator",
       "vintegrisFront": "Development of the digital identity solution nebulaSUITE through microsites using Angular and Bootstrap.",
-      "vintegris": "Branding, social media content, brochures, dossiers, presentations, and product datasheets, stationery, image editing. UI/UX, maintenance, and management of the company's websites using WordPress. Digital illustration. Design and layout of newsletters and email marketing.",
+      "vintegris": "Branding, brochures, dossiers, presentations, stationery and product datasheets. Social media content and image editing. UX/UI design. Maintenance and management of the company's websites using WordPress. Digital illustration. Design and layout of newsletters and email marketing.",
       "mediaMotive": "Layout of landings in CSS and HTML with Bootstrap. Creation of web advertisements with Google Web Designer, Photoshop, and Illustrator.",
       "freelance": "Illustrations and graphic design focused on multimedia projects. Editorial design. Branding. Creation of WordPress websites.",
       "herder": "Graphic design for web and social media, editorial design (covers, layout), catalogs, posters, email marketing. Interface (UI) design for the Herder Subscription Portal. Branding development, content for the web and social media, and illustrations for Filosofía & Co.",
@@ -41,6 +53,7 @@
     },
     "education": {
       "title": "Education",
+      "complementaryTitle": "Complementary Education",
       "certProf": "Development of Multimedia Editorial Products",
       "certProfText": "Professional Certification, Level 3",
       "cfgs": "CFGS Plastic Arts and Design in Illustration",
@@ -48,6 +61,15 @@
       "illustration": "Techniques Applied to Illustration",
       "typographic": "Typographic Architecture and Layout",
       "labDig": "Creation, Editing, and Promotion of Digital Content and Services (LABDig)"
+    },
+    "languages": {
+      "title": "Languages",
+      "spanishGalician": "Spanish | Galician",
+      "english": "English",
+      "germanCatalan": "German | Catalan",
+      "native": "Native",
+      "basic": "Basic",
+      "mediumHigh": "Medium-High"
     },
     "seeLess": "See less",
     "seeMore": "See more"

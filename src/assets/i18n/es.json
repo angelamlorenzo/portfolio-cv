@@ -23,17 +23,99 @@
   "skills": {
     "title": "Habilidades y herramientas"
   },
+  "portfolio": {
+    "editorial": {
+      "category": "Editorial",
+      "bankMagazine": {
+        "title": "Artículo en Bank Magazine",
+        "description": "Una solución gráfica y editorial para explicar cómo la tecnología respondió a la urgencia sanitaria",
+        "paragraphOne": "En este artículo publicitario, publicado en la revista BANK en julio de 2020, no solo realizo la maquetación y los gráficos, sino que desgrano al completo cómo la Identidad Digital se convirtió en una herramienta clave durante la pandemia del COVID-19, en la que fue cada vez más imperativo un proceso de identificación remoto seguro y acorde a la legislación europea.",
+        "paragraphTwo": "La propuesta aportada por Euronovate Group era tapID (en la actualidad, ya disuelta e integrada dentro de otros productos de la compañía), una solución de Identidad Digital que cubre el proceso de identificación electrónica al completo.",
+        "technicalSpecs": "Página doble en una revista tamaño A4 (21,0 x 27,9 cm)."
+      },
+      "toTheMoon": {
+        "title": "Fly me to the Moon",
+        "description": "Diseño editorial con memoria histórica: una mirada gráfica a la Carrera Espacial",
+        "paragraphOne": "Esta propuesta sobre la Carrera Espacial surgió cuando se acercaba el 49º aniversario de la llegada del hombre a la Luna",
+        "paragraphTwo": "Decidí hacer una maquetación con una estructura muy sólida, en la que la tipografía también tuviera un gran peso a nivel compositivo. En cuanto a la gama de colores, mi intención era representar la polaridad de la época usando el color base de los trajes espaciales: azul para EE.UU., en referencia al traje Apolo A-5L y naranja para la URSS, debido al traje de Yuri Gagarin.",
+        "paragraphThree": "Los textos están extraidos de noticias originales de la época.",
+        "technicalSpecs": "56 páginas en papel estucado brillante de 150 gr., tamaño A5 (210 × 148 mm). Encuadernación rústica, portada en estucado mate de 350 gr."
+      },
+      "rabelo": {
+        "title": "O Lobo Rabelo",
+        "description": "Un salto al álbum infantil desde la retranca gallega y el collage digital",
+        "paragraphOne": "A pesar de mi larga relación con la ilustración, no mostré mucho interés en el álbum ilustrado para niños; en general, mi público se centraba en adolescentes y adultos.",
+        "paragraphTwo": "Sin embargo, durante la época en la tomé clases con el ilustrador Dani Torrent, finalmente me decidí a salir de mi zona de confort. Dado que iba a lanzarme a la piscina con el collage digital y el público al que iba dirigido, aproveché la ocasión para dibujar un cuento gallego, de esos de larga tradición familiar, repleto de la retranca y el humor que caracterizan a la parte noroccidental de España.",
+        "technicalSpecs": "32 páginas en papel estucado mate de 200 gr., tamaño A4 (210 x 297 mm). Encuadernación en cartoné."
+      },
+      "hellWillBeSweet": {
+        "title": "El Infierno será dulce sin ti",
+        "description": "Entre la línea y la leyenda: una historia ilustrada sobre la creación y sus consecuencias",
+        "paragraphOne": "Este libro ilustrado es un trabajo personal, tanto a nivel de dibujo como de escritura, que narra la historia del joven Víctor Gris.",
+        "paragraphTwo": "Víctor es un artista que, tras un largo tiempo de convivencia con su maestro, es maldecido (¿o quizás bendecido?) con el don de crear vida a partir de sus obras. Con esto, nuestro protagonista tendrá que lidiar con esta habilidad y con problemáticas que se remontan al Frankenstein de Mary Shelley y al Dorian Gray de Oscar Wilde.",
+        "paragraphThree": "Las imágenes están realizadas con línea de bolígrafo negro, en una especie de reminiscencia del grabado de finales del s.XIX.",
+        "technicalSpecs": "60 páginas en papel offset gris de 140 gr., 180 x 240 mm. Encuadernación cosida en cartoné forrado en tela, con sobrecubierta del mismo papel que el interior."
+      },
+      "folieaDeux": {
+        "title": "Folie à deux",
+        "description": "Fragmentos de diálogo que dibujan el mapa emocional de una etapa vital",
+        "paragraphOne": "Este libro reúne treinta y dos conversaciones entre una persona (madre, amigos, novio, compañeros de clase, etc.) y yo misma. Estos diálogos están sacados de mensajes de texto, redes sociales, notas guardadas y, por supuesto, mi memoria.",
+        "paragraphTwo": "Al igual que cambia la persona a la que me dirijo, el tono de la conversación también oscila de forma continuada: tenemos páginas que nos muestran charlas alegres o tristes, distendidas o meditabundas. Se trata de un reflejo muy certero e incisivo de mi vida como estudiante universitaria y del cambio de la adolescencia a la vida de joven adulta.",
+        "paragraphThree": "El título nos habla de cómo algo tan cotidiano como mantener una conversación puede desembocar en una “locura compartida” o “locura a dos bandas” (Folie à deux).",
+        "technicalSpecs": "65 páginas a color en papel estucado mate de 150 gr., tamaño A5 (210 × 148 mm). Encuadernación rústica, portada en estucado mate 350gr."
+      },
+      "project": {
+        "title": "",
+        "description": "",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "technicalSpecs": ""
+      }
+    },
+    "graphicDesign": {
+      "category": "Diseño Gráfico",
+      "languageCatalog": {
+        "title": "Catálogo de Idiomas",
+        "description": "Una travesía ilustrada por los idiomas y sus caminos de aprendizaje",
+        "paragraphOne": "Herder Editorial es especialmente conocida por su amplia oferta de idiomas, de forma que todos los años precisan un catálogo impreso que muestre su gran abanico de métodos de aprendizaje.",
+        "paragraphTwo": "El concepto del viaje y de la comunicación debían estar presentes en la portada, por lo que realicé una ilustración acorde a esa temática, además de un par de promos de novedades para el interior.",
+        "technicalSpecs": "Papel estucado con laminado brillante, 200 gr. Encuadernación grapada. 160 x 219 mm."
+      },
+      "ensign": {
+        "title": "ENSIGN 11 & ENSIGN 11 NFC",
+        "description": "Diseño gráfico al servicio de la innovación tecnológica",
+        "paragraphOne": "ENSIGN 11 es una tableta de 10' 1’’ con pantalla táctil a color destinada no solo a la firma, sino a la presentación de contenido que la empresa propietaria pueda considerar informativo o beneficioso para sus fines. La versatilidad de ENSIGN 11 ha hecho que, paulatinamente, puedan añadirse otras funcionalidades, como es el caso de la tecnología NFC.",
+        "paragraphTwo": "Este folleto se diseñó con el fin de transmitir las cualidades de ambos productos, posibles casos de uso e información técnica, para así ayudar al público objetivo a elegir la tableta que más se amolde a sus necesidades.",
+        "technicalSpecs": "Folleto de 12 páginas impreso en papel estucado mate de 170 gr., tamaño A4 horizontal (297 x 210 mm). Portada en papel estucado mate de 300gr."
+      },
+      "newsletters": {
+        "title": "Newsletters Estacionales",
+        "description": "Diseñando vínculos desde el correo hasta la colaboración",
+        "paragraphOne": "En lo que respecta al email marketing de una empresa, es tan importante afianzar la comunicación con el cliente como con los propios trabajadores. Por ello, dentro de Euronovate Group se plantearon comunicaciones y newsletters internas para mantener a empleados y colaboradores al tanto de las últimas novedades del grupo.",
+        "paragraphTwo": "Todas estas comunicaciones están construidas en HTML y CSS, atendiendo a los criterios de los proveedores de correo más habituales, y gráficos vectoriales adecuados a la situación o diseño requeridos.",
+        "technicalSpecs": "Diseño inicial planteado en Figma. Newsletters desarrolladas en HTML y CSS. Gráficos vectoriales e ilustraciones creadas en Adobe Illustrator."
+      },
+      "enGroupIdentity": {
+        "title": "Nueva Identidad Euronovate Group",
+        "description": "Identidad, papelería y web al compás de una nueva visión corporativa",
+        "paragraphOne": "2021 fue un año de transformación para Euronovate Group, y eso debía verse reflejado en su marca. Su identidad, hasta entonces roja y angulosa, se modernizó con un tono naranja muy actual y formas más dinámicas.",
+        "paragraphTwo": "Este cambio radical, como no podía ser de otro modo, afectó no solo en la creación de un nuevo Manual de Identidad y en el diseño de una nueva papelería, sino en la transformación total de su página web.",
+        "technicalSpecs": "Guía de estilo de 15 páginas impresa en papel estucado mate de 170 gr., tamaño A4 horizontal (297 x 210 mm). Portada en papel estucado mate de 300gr. Web diseñada en Adobe Xd y desarrollada en WordPress. Tarjetas de visita de 85 x 55 mm impresas en papel estucado mate de 350 gr. "
+      }
+    },
+    "goBack": "Volver a la página principal"
+  },
   "resume": {
     "title": "Currículum",
     "workExperience": {
-      "title": "Experiencia laboral",
+      "title": "Carrera",
       "juniorDev": "Desarrolladora Front End Junior",
       "today": "Actual.",
       "graphicDesignerWeb": "Diseñadora Gráfica y Web",
       "graphicDesignerIllustration": "Diseñadora Gráfica e Ilustradora",
       "graphicWebIllustration": "Diseñadora Gráfica/Web e Ilustradora",
       "vintegrisFront": "Desarrollo de la solución de identidad digital nebulaSUITE mediante microsites con Angular y Bootstrap.",
-      "vintegris": "Branding, contenido para RRSS, folletos, dossieres, presentaciones y datasheets de productos, papelería, edición de imagen. UI/UX, mantenimiento y gestión de las webs de la compañía con WordPress. Ilustración digital. Diseño y maquetación de newsletters y email marketing.",
+      "vintegris": "Branding, folletos, dossieres, presentaciones, papelería y datasheets de productos. Contenido para redes sociales y edición de imagen. Diseño UI/UX. Mantenimiento y gestión de las webs de la compañía con WordPress. Ilustración digital. Diseño y maquetación de newsletters y email marketing.",
       "mediaMotive": "Maquetación de landings en CSS y HTML con Bootstrap. Creación de publicidad web con Google Web Designer, Photoshop e Illustrator.",
       "freelance": "Ilustraciones y diseño gráfico enfocado a proyectos multimedia. Diseño editorial. Branding. Creación de páginas en WordPress.",
       "herder": "Diseño de material gráfico para web y RRSS, diseño editorial (portadas,maquetación), catálogos, cartelería, email marketing. Diseño de Interfaz (UI) del Portal de Suscripción de Herder. Desarrollo de Branding, contenido para web y redes e ilustraciones para Filosofía & Co.",
@@ -41,6 +123,7 @@
     },
     "education": {
       "title": "Educación",
+      "complementaryTitle": "Educación complementaria",
       "certProf": "Desarrollo de Productos Editoriales Multimedia",
       "certProfText": "Certificado de Profesionalidad, nvl. 3",
       "cfgs": "CFGS en Artes Plásticas y Diseño en Ilustración",
@@ -48,6 +131,15 @@
       "illustration": "Técnicas aplicadas a la ilustración",
       "typographic": "Arquitectura tipográfica y maquetación",
       "labDig": "Creación, edición y promoción de contenidos y servicios digitales (LABDig)"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanishGalician": "Español | Gallego",
+      "english": "Inglés",
+      "germanCatalan": "Alemán | Catalán",
+      "native": "Nativo",
+      "basic": "Básico",
+      "mediumHigh": "Medio-Alto"
     },
     "seeLess": "Ver menos",
     "seeMore": "Ver más"
