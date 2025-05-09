@@ -24,9 +24,9 @@
     "title": "Habilidades y herramientas"
   },
   "portfolio": {
-    "editorial": {
-      "category": "Editorial",
-      "bankMagazine": {
+    "graphicdesign": {
+      "category": "Diseño Gráfico",
+      "bankmagazine": {
         "title": "Artículo en Bank Magazine",
         "description": "Una solución gráfica y editorial para explicar cómo la tecnología respondió a la urgencia sanitaria",
         "paragraphOne": "En este artículo publicitario, publicado en la revista BANK en julio de 2020, no solo realizo la maquetación y los gráficos, sino que desgrano al completo cómo la Identidad Digital se convirtió en una herramienta clave durante la pandemia del COVID-19, en la que fue cada vez más imperativo un proceso de identificación remoto seguro y acorde a la legislación europea.",
@@ -64,16 +64,6 @@
         "paragraphThree": "El título nos habla de cómo algo tan cotidiano como mantener una conversación puede desembocar en una “locura compartida” o “locura a dos bandas” (Folie à deux).",
         "technicalSpecs": "65 páginas a color en papel estucado mate de 150 gr., tamaño A5 (210 × 148 mm). Encuadernación rústica, portada en estucado mate 350gr."
       },
-      "project": {
-        "title": "",
-        "description": "",
-        "paragraphOne": "",
-        "paragraphTwo": "",
-        "technicalSpecs": ""
-      }
-    },
-    "graphicDesign": {
-      "category": "Diseño Gráfico",
       "languageCatalog": {
         "title": "Catálogo de Idiomas",
         "description": "Una travesía ilustrada por los idiomas y sus caminos de aprendizaje",
@@ -101,6 +91,20 @@
         "paragraphOne": "2021 fue un año de transformación para Euronovate Group, y eso debía verse reflejado en su marca. Su identidad, hasta entonces roja y angulosa, se modernizó con un tono naranja muy actual y formas más dinámicas.",
         "paragraphTwo": "Este cambio radical, como no podía ser de otro modo, afectó no solo en la creación de un nuevo Manual de Identidad y en el diseño de una nueva papelería, sino en la transformación total de su página web.",
         "technicalSpecs": "Guía de estilo de 15 páginas impresa en papel estucado mate de 170 gr., tamaño A4 horizontal (297 x 210 mm). Portada en papel estucado mate de 300gr. Web diseñada en Adobe Xd y desarrollada en WordPress. Tarjetas de visita de 85 x 55 mm impresas en papel estucado mate de 350 gr. "
+      },
+      "nebulaAccess": {
+        "title": "Nueva Identidad Euronovate Group",
+        "description": "Diseñando claridad en un entorno de autenticación cada vez más complejo",
+        "paragraphOne": "nebulaACCESS, la solución de Autenticación Dinámica Multifactor Adaptativa de nebulaSUITE, inaugura su modalidad SaaS (Software as a Service) con un nuevo folleto. En este se ahonda en los distintos tipos de autenticación de la herramienta, cómo pueden configurarse, sus características y sus beneficios.",
+        "paragraphTwo": "La imagen corporativa a seguir es la de la familia de productos nebulaSUITE, con su azul característico, ya renovada y perfeccionada tras la salida del módulo de video identificación remota de nebulaSUITE, nebulaID, en el primer trimestre de 2022.",
+        "technicalSpecs": "Folleto de 12 páginas, tamaño A4 horizontal (297 x 210 mm)."
+      },
+      "project": {
+        "title": "",
+        "description": "",
+        "paragraphOne": "",
+        "paragraphTwo": "",
+        "technicalSpecs": ""
       }
     },
     "goBack": "Volver a la página principal"

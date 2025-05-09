@@ -2,7 +2,7 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { PortfolioService } from "../../services/portfolio.service";
-import { INavBar, IProject } from "../../models/interfaces";
+import { IProject } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { TranslateService } from "@ngx-translate/core";
 
@@ -25,6 +25,7 @@ export class ProjectPageComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
       this.category = params["category"];
+      this.category = this.category.replace(/-/g, " ");
     });
 
     this.subscription.add(

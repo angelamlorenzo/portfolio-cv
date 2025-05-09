@@ -29,6 +29,7 @@ export interface IGallery {
 
 export interface IProject {
   title: string;
+  key: string;
   previewImg: string;
   date: number;
   description: string;

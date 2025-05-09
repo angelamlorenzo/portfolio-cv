@@ -18,13 +18,13 @@ export class MainPageComponent implements OnInit, OnDestroy {
     { href: "#resume", name: "header.resume", active: false },
   ];
 
-  public selectedCategory: string = "Editorial";
+  public selectedCategory: string = "Diseño Gráfico";
   public copyright: string = "copyright";
 
   public tabsItem: ITabs[] = [
-    { active: true, name: "Editorial", id: "editorial", category: "Editorial" },
-    { active: false, name: "Diseño Gráfico", id: "diseno-grafico", category: "Diseño Gráfico" },
-    { active: false, name: "Otros", id: "otros", category: "Otros" },
+    { active: true, name: "Diseño Gráfico", id: "diseno-grafico", category: "Diseño Gráfico" },
+    { active: false, name: "Ilustración", id: "otros", category: "Otros" },
+    { active: false, name: "Web", id: "otros", category: "Otros" },
   ];
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
@@ -49,17 +49,30 @@ export class MainPageComponent implements OnInit, OnDestroy {
     if (activeTab) {
       this.loading = true;
       this.selectedCategory = activeTab.category;
-      console.log(this.selectedCategory);
     }
+    this.loading = false;
     this.getGallery();
   }
 
-  public showProjectInfo(project: IProject): void {
-    const translatedCategory = this.translate.instant(`portfolio.editorial.category`);
-    const translatedTitle = this.translate.instant(`portfolio.editorial.toTheMoon.title`);
+  showProjectInfo(project: IProject): void {
+    let categoryKey: string;
+    switch (this.selectedCategory) {
+      case "Diseño Gráfico":
+        categoryKey = "portfolio.graphicdesign.category";
+        break;
+      case "Editorial":
+        categoryKey = "portfolio.graphicdesign.category";
+        break;
+      default:
+        categoryKey = `portfolio.${this.selectedCategory.toLowerCase()}`;
+        break;
+    }
 
-    const categoryWithHyphens = translatedCategory.replace(/\s+/g, "-").toLowerCase();
+    const translatedCategory = this.translate.instant(`${categoryKey}`);
+    const translatedTitle = this.translate.instant(`${project.title}`);
+
     const titleWithHyphens = translatedTitle.replace(/\s+/g, "-").toLowerCase();
+    const categoryWithHyphens = translatedCategory.replace(/\s+/g, "-").toLowerCase();
 
     this.portfolioService.selectedProject.next(project);
     this.router.navigate([`/portfolio/${categoryWithHyphens}/${titleWithHyphens}`]);

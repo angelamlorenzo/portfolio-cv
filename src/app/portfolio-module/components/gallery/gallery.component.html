@@ -3,7 +3,7 @@
     <div class="row g-0" *ngFor="let category of gallery | filterGallery : selectedCategory">
       <div class="col-xl-4 col-lg-6" *ngFor="let project of category.projects">
         <div class="gallery__img-container" (click)="selectProject(project)">
-          <img [src]="project.previewImage" [alt]="project.title" class="gallery__img img-fluid" />
+          <img [src]="project.previewImage" [alt]="project.title" class="gallery__img img-fluid" loading="lazy" />
           <div class="gallery__overlay"></div>
           <div class="gallery__caption py-1 px-2">
             <span class="gallery__name fs-5 lh-1">{{ project.title | translate }}</span>
