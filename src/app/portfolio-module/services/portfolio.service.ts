@@ -14,6 +14,6 @@ export class PortfolioService {
 
   public getGallery(): Observable<IGallery[]> {
     const url = assetUrl("/data/portfolio-data.json");
-    return this.http.get<IGallery[]>(url).pipe(delay(100));
+    return this.http.get<IGallery[]>(url).pipe(delay(400));
   }
 }

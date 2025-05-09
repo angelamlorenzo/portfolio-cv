@@ -21,13 +21,23 @@
           *ngFor="let item of navBar"
           (click)="setNavBarOption(item)"
         >
-          {{ item.name }}
+          {{ item.name | translate }}
         </a>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Language</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            {{ "header.language." + currentLanguage | translate }}
+          </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
+            <li>
+              <a class="dropdown-item" (click)="changeLanguage('en')" *ngIf="currentLanguage !== 'en'">{{
+                "header.language.en" | translate
+              }}</a>
+            </li>
+            <li>
+              <a class="dropdown-item" (click)="changeLanguage('es')" *ngIf="currentLanguage !== 'es'">{{
+                "header.language.es" | translate
+              }}</a>
+            </li>
           </ul>
         </li>
       </div>

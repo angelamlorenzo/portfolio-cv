@@ -29,6 +29,7 @@ export interface IGallery {
 
 export interface IProject {
   title: string;
+  key: string;
   previewImg: string;
   date: number;
   description: string;
@@ -44,4 +45,17 @@ export interface IProject {
 export interface IImage {
   src: string;
   altText: string;
+}
+
+export interface Experience {
+  title: string;
+  company?: string;
+  institution?: string;
+  period: string;
+  description?: string;
+}
+
+export interface Languages {
+  language: string;
+  level: string;
 }

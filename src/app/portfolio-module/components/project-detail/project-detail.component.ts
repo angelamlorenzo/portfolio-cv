@@ -2,7 +2,7 @@ import { Component, Input, OnInit, OnDestroy } from "@angular/core";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { IProject } from "../../models/interfaces";
 import { PortfolioService } from "../../services/portfolio.service";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { ViewportScroller } from "@angular/common";
 
 @Component({
@@ -14,10 +14,11 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
   @Input() category: string = "";
   @Input() selectedProject: BehaviorSubject<IProject> = new BehaviorSubject({} as IProject);
   public loading: boolean = true;
+  public goBack: string = "portfolio.goBack";
 
   private subscription: Subscription = new Subscription();
 
-  constructor(private portfolioService: PortfolioService, private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
+  constructor(private portfolioService: PortfolioService, private router: Router) {}
 
   ngOnInit(): void {
     this.chooseProject();

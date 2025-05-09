@@ -3,6 +3,7 @@ import { IGallery, INavBar, IProject, ITabs } from "../../models/interfaces";
 import { BehaviorSubject, Subscription } from "rxjs";
 import { PortfolioService } from "../../services/portfolio.service";
 import { Router } from "@angular/router";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-main-page",
@@ -11,18 +12,19 @@ import { Router } from "@angular/router";
 })
 export class MainPageComponent implements OnInit, OnDestroy {
   public navBar: INavBar[] = [
-    { href: "#about", name: "About me", active: true },
-    { href: "#skills", name: "Skills", active: false },
-    { href: "#portfolio", name: "Portfolio", active: false },
-    { href: "#resume", name: "Resume", active: false },
+    { href: "#about", name: "header.aboutMe", active: true },
+    { href: "#skills", name: "header.skills", active: false },
+    { href: "#portfolio", name: "header.portfolio", active: false },
+    { href: "#resume", name: "header.resume", active: false },
   ];
 
-  public selectedCategory: string = "Animales";
+  public selectedCategory: string = "Diseño Gráfico";
+  public copyright: string = "copyright";
 
   public tabsItem: ITabs[] = [
-    { active: true, name: "Animales", id: "animales", category: "Animales" },
-    { active: false, name: "Flores", id: "flores", category: "Flores" },
-    { active: false, name: "Otros", id: "otros", category: "Otros" },
+    { active: true, name: "Diseño Gráfico", id: "diseno-grafico", category: "Diseño Gráfico" },
+    { active: false, name: "Ilustración", id: "otros", category: "Otros" },
+    { active: false, name: "Web", id: "otros", category: "Otros" },
   ];
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);
@@ -32,7 +34,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   private subscription = new Subscription();
 
-  constructor(public portfolioService: PortfolioService, public router: Router) {}
+  constructor(public portfolioService: PortfolioService, public router: Router, private translate: TranslateService) {}
 
   ngOnInit(): void {
     this.getGallery();
@@ -48,13 +50,32 @@ export class MainPageComponent implements OnInit, OnDestroy {
       this.loading = true;
       this.selectedCategory = activeTab.category;
     }
+    this.loading = false;
     this.getGallery();
   }
 
-  public showProjectInfo(project: IProject): void {
+  showProjectInfo(project: IProject): void {
+    let categoryKey: string;
+    switch (this.selectedCategory) {
+      case "Diseño Gráfico":
+        categoryKey = "portfolio.graphicdesign.category";
+        break;
+      case "Editorial":
+        categoryKey = "portfolio.graphicdesign.category";
+        break;
+      default:
+        categoryKey = `portfolio.${this.selectedCategory.toLowerCase()}`;
+        break;
+    }
+
+    const translatedCategory = this.translate.instant(`${categoryKey}`);
+    const translatedTitle = this.translate.instant(`${project.title}`);
+
+    const titleWithHyphens = translatedTitle.replace(/\s+/g, "-").toLowerCase();
+    const categoryWithHyphens = translatedCategory.replace(/\s+/g, "-").toLowerCase();
+
     this.portfolioService.selectedProject.next(project);
-    const titleSlug = project.title.replace(/\s+/g, "-").toLowerCase();
-    this.router.navigate([`portfolio/${this.selectedCategory.toLowerCase()}/${titleSlug}`]);
+    this.router.navigate([`/portfolio/${categoryWithHyphens}/${titleWithHyphens}`]);
   }
 
   private getGallery() {
@@ -69,7 +90,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
     );
   }
 
-  /*@HostListener("window:scroll", [])
+  @HostListener("window:scroll", [])
   onWindowScroll(): void {
     let currentSection = "";
 
@@ -87,5 +108,5 @@ export class MainPageComponent implements OnInit, OnDestroy {
     this.navBar.forEach((item) => {
       item.active = item.href === currentSection;
     });
-  }*/
+  }
 }
