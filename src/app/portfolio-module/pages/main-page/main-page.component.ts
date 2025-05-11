@@ -60,8 +60,11 @@ export class MainPageComponent implements OnInit, OnDestroy {
       case "Diseño Gráfico":
         categoryKey = "portfolio.graphicdesign.category";
         break;
-      case "Editorial":
-        categoryKey = "portfolio.graphicdesign.category";
+      case "Ilustración":
+        categoryKey = "portfolio.illustration.category";
+        break;
+      case "Web":
+        categoryKey = "portfolio.web.category";
         break;
       default:
         categoryKey = `portfolio.${this.selectedCategory.toLowerCase()}`;
