@@ -23,8 +23,8 @@ export class MainPageComponent implements OnInit, OnDestroy {
 
   public tabsItem: ITabs[] = [
     { active: true, name: "Diseño Gráfico", id: "diseno-grafico", category: "Diseño Gráfico" },
-    { active: false, name: "Ilustración", id: "otros", category: "Otros" },
-    { active: false, name: "Web", id: "otros", category: "Otros" },
+    { active: false, name: "Ilustración", id: "ilustracion", category: "Ilustración" },
+    { active: false, name: "Web", id: "web", category: "Web" },
   ];
 
   public gallery: BehaviorSubject<IGallery[]> = new BehaviorSubject([] as IGallery[]);

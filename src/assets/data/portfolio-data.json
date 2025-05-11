@@ -20,14 +20,14 @@
       },
       {
         "title": "portfolio.graphicdesign.enGroupIdentity.title",
-        "previewImage": "assets/img/nebulaaccess/nebulaACCESS_Cover.png",
+        "previewImage": "assets/img/engroup-id/CorporateIdentity-Euronovate.png",
         "date": "2022",
         "description": "portfolio.graphicdesign.enGroupIdentity.description",
         "paragraphOne": "portfolio.graphicdesign.enGroupIdentity.paragraphOne",
         "paragraphTwo": "portfolio.graphicdesign.enGroupIdentity.paragraphTwo",
         "technicalSpecs": "portfolio.graphicdesign.enGroupIdentity.technicalSpecs",
         "images": [
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_Cover.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/engroup-id/CorporateIdentity-Euronovate.png", "altText": "Lorem ipsum dolor sit amet 1" },
           { "src": "assets/img/engroup-id/Guide_Mockup.png", "altText": "Lorem ipsum dolor sit amet 2" },
           { "src": "assets/img/engroup-id/Front-View-Laptop-euronovate.png", "altText": "Lorem ipsum dolor sit amet 2" },
           { "src": "assets/img/engroup-id/Business-Card.png", "altText": "Lorem ipsum dolor sit amet 2" }
@@ -35,17 +35,18 @@
       },
       {
         "title": "portfolio.graphicdesign.nebulaAccess.title",
-        "previewImage": "assets/img/engroup-id/CorporateIdentity-Euronovate.png",
+        "previewImage": "assets/img/nebulaaccess/nebulaACCESS_Cover.png",
         "date": "2022",
         "description": "portfolio.graphicdesign.nebulaAccess.description",
         "paragraphOne": "portfolio.graphicdesign.nebulaAccess.paragraphOne",
         "paragraphTwo": "portfolio.graphicdesign.nebulaAccess.paragraphTwo",
         "technicalSpecs": "portfolio.graphicdesign.nebulaAccess.technicalSpecs",
         "images": [
-          { "src": "assets/img/engroup-id/CorporateIdentity-Euronovate.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/engroup-id/Guide_Mockup.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/engroup-id/Front-View-Laptop-euronovate.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/engroup-id/Business-Card.png", "altText": "Lorem ipsum dolor sit amet 2" }
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Cover.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Pag1_Med.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Middle_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_PagLast_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Back_Med.png", "altText": "Lorem ipsum dolor sit amet 2" }
         ]
       },
       {
@@ -112,15 +113,15 @@
       },
       {
         "title": "portfolio.graphicdesign.languageCatalog.title",
-        "previewImage": "https://picsum.photos/id/152/500/350",
+        "previewImage": "assets/img/catalogo/Catalogo.jpg",
         "date": "2018",
         "description": "portfolio.graphicdesign.languageCatalog.description",
         "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
         "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
         "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
         "images": [
-          { "src": "https://picsum.photos/id/152/1500/900", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "https://picsum.photos/id/82/1500/900", "altText": "Lorem ipsum dolor sit amet 2" }
+          { "src": "assets/img/catalogo/Catalogo.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/catalogo/promos.jpg", "altText": "Lorem ipsum dolor sit amet 2" }
         ],
         "url": "www.urlfake.com",
         "urlName": "urlFake"
@@ -161,18 +162,156 @@
     ]
   },
   {
-    "category": "Otros",
+    "category": "Ilustración",
     "projects": [
       {
-        "title": "Reloj de manillas",
-        "previewImage": "https://picsum.photos/id/175/500/350",
-        "date": "2023",
-        "description": "Describe here the project with two or three sentences that sound catching!",
-        "paragraphOne": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum posuere felis, in pharetra ipsum rhoncus vitae.",
-        "paragraphTwo": "Vestibulum consectetur dictum elit eget placerat. Aliquam luctus hendrerit metus, eu commodo nulla finibus ut. In maximus augue mauris, et ullamcorper sapien ullamcorper in.",
-        "paragraphThree": "Donec dignissim eros dapibus hendrerit sollicitudin. Suspendisse maximus porta nunc, eget placerat leo ornare id.",
-        "technicalSpecs": "Morbi facilisis fermentum euismod. Vivamus egestas non nibh eu rutrum. Curabitur ut risus venenatis, suscipit turpis nec, iaculis libero.",
-        "images": [{ "src": "https://picsum.photos/id/175/1500/900", "altText": "Lorem ipsum dolor sit amet 1" }]
+        "title": "portfolio.editorial.rabelo.title",
+        "previewImage": "assets/img/esignature/Illustrations-05.png",
+        "date": "2022",
+        "description": "portfolio.editorial.rabelo.description",
+        "paragraphOne": "portfolio.editorial.rabelo.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.rabelo.paragraphTwo",
+        "technicalSpecs": "portfolio.editorial.rabelo.technicalSpecs",
+        "images": [
+          { "src": "assets/img/esignature/esignature-video-1.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/esignature/esignature-video-2.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/esignature/esignature-video-3.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/esignature-video-4.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/Illustrations-05.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/Illustrations-06.png", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "portfolio.editorial.rabelo.title",
+        "previewImage": "assets/img/rabelo/Portada.png",
+        "date": "2019",
+        "description": "portfolio.editorial.rabelo.description",
+        "paragraphOne": "portfolio.editorial.rabelo.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.rabelo.paragraphTwo",
+        "technicalSpecs": "portfolio.editorial.rabelo.technicalSpecs",
+        "images": [
+          { "src": "assets/img/rabelo/Portada.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/rabelo/Interior-1.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/rabelo/interior-2.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/rabelo/interior-3.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/rabelo/interior-4.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/rabelo/interior-5.png", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/catalogo/Catalogo.jpg",
+        "date": "2018",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/catalogo/Catalogo.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/catalogo/promos.jpg", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/belle-epoque/mockup-pared.jpg",
+        "date": "2018",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/belle-epoque/mockup-pared.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/belle-epoque/Mockup-fondo-gris.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/belle-epoque/Mockup-fondo-negro.jpg", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.editorial.hellWillBeSweet.title",
+        "previewImage": "assets/img/eisdst/Portada-sobrecubierta.jpg",
+        "date": "2016",
+        "description": "portfolio.editorial.hellWillBeSweet.description",
+        "paragraphOne": "portfolio.editorial.hellWillBeSweet.paragraphOne",
+        "paragraphTwo": "portfolio.editorial.hellWillBeSweet.paragraphTwo",
+        "paragraphThree": "portfolio.editorial.hellWillBeSweet.paragraphThree",
+        "technicalSpecs": "portfolio.editorial.hellWillBeSweet.technicalSpecs",
+        "images": [
+          { "src": "assets/img/eisdst/Portada-sobrecubierta.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/eisdst/portada-interior.jpg", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/eisdst/Primera-pagina.jpg", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Web",
+    "projects": [
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/niabellum/niabellum-mac.png",
+        "date": "2020",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/niabellum/niabellum-mac.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/niabellum/niabellum-responsive.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/niabellum/niabellum-tablet-movil-shadow.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/identech/mac-identech.png",
+        "date": "2020",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/identech/mac-identech.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/identech/mac-identech-2.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/identech/mac-identech-3.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/reviewc/mobile-review.png",
+        "date": "2019",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/reviewc/mobile-review.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/reviewc/promo1.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/reviewc/promo2.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/reviewc/pantallas-reviewc-app.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
+      },
+      {
+        "title": "portfolio.graphicdesign.languageCatalog.title",
+        "previewImage": "assets/img/herder/herder-suscriptions.png",
+        "date": "2018",
+        "description": "portfolio.graphicdesign.languageCatalog.description",
+        "paragraphOne": "portfolio.graphicdesign.languageCatalog.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.languageCatalog.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.languageCatalog.technicalSpecs",
+        "images": [
+          { "src": "assets/img/herder/herder-suscriptions.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/herder/herder-suscriptions-purchase.png", "altText": "Lorem ipsum dolor sit amet 1" }
+        ],
+        "url": "www.urlfake.com",
+        "urlName": "urlFake"
       }
     ]
   }
