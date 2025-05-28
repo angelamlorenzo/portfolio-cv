@@ -50,5 +50,10 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
     }, 200);
   }
 
-  public goToLink(): void {}
+  public goToLink(): void {
+    const project = this.selectedProject?.getValue();
+    if (project && project.url) {
+      window.open(project.url, "_blank");
+    }
+  }
 }

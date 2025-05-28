@@ -3,98 +3,8 @@
     "category": "Diseño Gráfico",
     "projects": [
       {
-        "title": "portfolio.graphicdesign.ensign.title",
-        "previewImage": "assets/img/ensign/ENSIGN-11-COVER.png",
-        "date": "2022",
-        "description": "portfolio.graphicdesign.ensign.description",
-        "paragraphOne": "portfolio.graphicdesign.ensign.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.ensign.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.ensign.technicalSpecs",
-        "images": [
-          { "src": "assets/img/ensign/ENSIGN-11-COVER.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/ensign/ENSIGN-11-2.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/ensign/ENSIGN-11-3.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/ensign/ENSIGN-11-4.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/ensign/ENSIGN-11-5.png", "altText": "Lorem ipsum dolor sit amet 2" }
-        ]
-      },
-      {
-        "title": "portfolio.graphicdesign.enGroupIdentity.title",
-        "previewImage": "assets/img/engroup-id/CorporateIdentity-Euronovate.png",
-        "date": "2022",
-        "description": "portfolio.graphicdesign.enGroupIdentity.description",
-        "paragraphOne": "portfolio.graphicdesign.enGroupIdentity.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.enGroupIdentity.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.enGroupIdentity.technicalSpecs",
-        "images": [
-          { "src": "assets/img/engroup-id/CorporateIdentity-Euronovate.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/engroup-id/Guide_Mockup.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/engroup-id/Front-View-Laptop-euronovate.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/engroup-id/Business-Card.png", "altText": "Lorem ipsum dolor sit amet 2" }
-        ]
-      },
-      {
-        "title": "portfolio.graphicdesign.nebulaAccess.title",
-        "previewImage": "assets/img/nebulaaccess/nebulaACCESS_Cover.png",
-        "date": "2022",
-        "description": "portfolio.graphicdesign.nebulaAccess.description",
-        "paragraphOne": "portfolio.graphicdesign.nebulaAccess.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.nebulaAccess.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.nebulaAccess.technicalSpecs",
-        "images": [
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_Cover.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_Pag1_Med.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_Middle_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_PagLast_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/nebulaaccess/nebulaACCESS_Back_Med.png", "altText": "Lorem ipsum dolor sit amet 2" }
-        ]
-      },
-      {
-        "title": "portfolio.graphicdesign.newsletters.title",
-        "previewImage": "assets/img/newsletters/Summer-Newsletter.png",
-        "date": "2021-2023",
-        "description": "portfolio.graphicdesign.newsletters.description",
-        "paragraphOne": "portfolio.graphicdesign.newsletters.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.newsletters.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.newsletters.technicalSpecs",
-        "images": [
-          { "src": "assets/img/newsletters/Summer-Newsletter.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/newsletters/Easter-Mobile.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/newsletters/Spring-Newsletter.png", "altText": "Lorem ipsum dolor sit amet 2" }
-        ]
-      },
-      {
-        "title": "portfolio.graphicdesign.bankMagazine.title",
-        "previewImage": "assets/img/bank-magazine/Articulo_Polonia_2.png",
-        "date": "2020",
-        "description": "portfolio.graphicdesign.bankMagazine.description",
-        "paragraphOne": "portfolio.graphicdesign.bankMagazine.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.bankMagazine.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.bankMagazine.technicalSpecs",
-        "images": [
-          { "src": "assets/img/bank-magazine/Articulo_Polonia_2.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/bank-magazine/Articulo_Polonia.png", "altText": "Lorem ipsum dolor sit amet 1" }
-        ]
-      },
-      {
-        "title": "portfolio.graphicdesign.rabelo.title",
-        "previewImage": "assets/img/rabelo/Portada.png",
-        "date": "2019",
-        "description": "portfolio.graphicdesign.rabelo.description",
-        "paragraphOne": "portfolio.graphicdesign.rabelo.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.rabelo.paragraphTwo",
-        "technicalSpecs": "portfolio.graphicdesign.rabelo.technicalSpecs",
-        "images": [
-          { "src": "assets/img/rabelo/Portada.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/rabelo/Interior-1.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/rabelo/interior-2.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/rabelo/interior-3.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/rabelo/interior-4.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/rabelo/interior-5.png", "altText": "Lorem ipsum dolor sit amet 3" }
-        ]
-      },
-      {
         "title": "portfolio.graphicdesign.toTheMoon.title",
+        "slug": "to-the-moon",
         "previewImage": "assets/img/to-the-moon/Portada_fly-me-to-the-moon.jpg",
         "date": "2018",
         "description": "portfolio.graphicdesign.toTheMoon.description",
@@ -112,7 +22,24 @@
         ]
       },
       {
+        "title": "portfolio.graphicdesign.enGroupIdentity.title",
+        "slug": "engroup-identity",
+        "previewImage": "assets/img/engroup-id/CorporateIdentity-Euronovate.png",
+        "date": "2022",
+        "description": "portfolio.graphicdesign.enGroupIdentity.description",
+        "paragraphOne": "portfolio.graphicdesign.enGroupIdentity.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.enGroupIdentity.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.enGroupIdentity.technicalSpecs",
+        "images": [
+          { "src": "assets/img/engroup-id/CorporateIdentity-Euronovate.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/engroup-id/Guide_Mockup.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/engroup-id/Front-View-Laptop-euronovate.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/engroup-id/Business-Card.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
         "title": "portfolio.graphicdesign.languageCatalog.title",
+        "slug": "language-catalog",
         "previewImage": "assets/img/catalogo/Catalogo.jpg",
         "date": "2018",
         "description": "portfolio.graphicdesign.languageCatalog.description",
@@ -124,25 +51,73 @@
           { "src": "assets/img/catalogo/promos.jpg", "altText": "Lorem ipsum dolor sit amet 2" }
         ]
       },
+
       {
-        "title": "portfolio.graphicdesign.hellWillBeSweet.title",
-        "previewImage": "assets/img/eisdst/Portada-sobrecubierta.jpg",
-        "date": "2016",
-        "description": "portfolio.graphicdesign.hellWillBeSweet.description",
-        "paragraphOne": "portfolio.graphicdesign.hellWillBeSweet.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.hellWillBeSweet.paragraphTwo",
-        "paragraphThree": "portfolio.graphicdesign.hellWillBeSweet.paragraphThree",
-        "technicalSpecs": "portfolio.graphicdesign.hellWillBeSweet.technicalSpecs",
+        "title": "portfolio.graphicdesign.ensign.title",
+        "slug": "ensign-11-nfc",
+        "previewImage": "assets/img/ensign/ENSIGN-11-COVER.png",
+        "date": "2022",
+        "description": "portfolio.graphicdesign.ensign.description",
+        "paragraphOne": "portfolio.graphicdesign.ensign.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.ensign.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.ensign.technicalSpecs",
         "images": [
-          { "src": "assets/img/eisdst/Portada-sobrecubierta.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/eisdst/portada-interior.jpg", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/eisdst/Primera-pagina.jpg", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/eisdst/pag2.jpg", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/eisdst/pag3.jpg", "altText": "Lorem ipsum dolor sit amet 3" }
+          { "src": "assets/img/ensign/ENSIGN-11-COVER.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/ensign/ENSIGN-11-2.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/ensign/ENSIGN-11-3.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/ensign/ENSIGN-11-4.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/ensign/ENSIGN-11-5.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
+        "title": "portfolio.graphicdesign.newsletters.title",
+        "slug": "newsletters",
+        "previewImage": "assets/img/newsletters/Summer-Newsletter.png",
+        "date": "2021-2023",
+        "description": "portfolio.graphicdesign.newsletters.description",
+        "paragraphOne": "portfolio.graphicdesign.newsletters.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.newsletters.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.newsletters.technicalSpecs",
+        "images": [
+          { "src": "assets/img/newsletters/Summer-Newsletter.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/newsletters/Easter-Mobile.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/newsletters/Spring-Newsletter.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
+        "title": "portfolio.graphicdesign.nebulaAccess.title",
+        "slug": "nebulaaccess-catalog",
+        "previewImage": "assets/img/nebulaaccess/nebulaACCESS_Cover.png",
+        "date": "2022",
+        "description": "portfolio.graphicdesign.nebulaAccess.description",
+        "paragraphOne": "portfolio.graphicdesign.nebulaAccess.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.nebulaAccess.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.nebulaAccess.technicalSpecs",
+        "images": [
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Cover.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Pag1_Med.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Middle_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_PagLast_Med.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/nebulaaccess/nebulaACCESS_Back_Med.png", "altText": "Lorem ipsum dolor sit amet 2" }
+        ]
+      },
+      {
+        "title": "portfolio.graphicdesign.bankMagazine.title",
+        "slug": "bankmagazine-article",
+        "previewImage": "assets/img/bank-magazine/Articulo_Polonia_2.png",
+        "date": "2020",
+        "description": "portfolio.graphicdesign.bankMagazine.description",
+        "paragraphOne": "portfolio.graphicdesign.bankMagazine.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.bankMagazine.paragraphTwo",
+        "technicalSpecs": "portfolio.graphicdesign.bankMagazine.technicalSpecs",
+        "images": [
+          { "src": "assets/img/bank-magazine/Articulo_Polonia_2.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/bank-magazine/Articulo_Polonia.png", "altText": "Lorem ipsum dolor sit amet 1" }
         ]
       },
       {
         "title": "portfolio.graphicdesign.folie.title",
+        "slug": "folie-a-deux",
         "previewImage": "assets/img/foliedeux/Portada-folie-a-deux.png",
         "date": "2013",
         "description": "portfolio.graphicdesign.folie.description",
@@ -165,26 +140,8 @@
     "category": "Ilustración",
     "projects": [
       {
-        "title": "portfolio.illustration.esignature.title",
-        "previewImage": "assets/img/esignature/Illustrations-05.png",
-        "date": "2022",
-        "description": "portfolio.illustration.esignature.description",
-        "paragraphOne": "portfolio.illustration.esignature.paragraphOne",
-        "paragraphTwo": "portfolio.illustration.esignature.paragraphTwo",
-        "technicalSpecs": "portfolio.illustration.esignature.technicalSpecs",
-        "images": [
-          { "src": "assets/img/esignature/esignature-video-1.png", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/esignature/esignature-video-2.png", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/esignature/esignature-video-3.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/esignature/esignature-video-4.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/esignature/Illustrations-05.png", "altText": "Lorem ipsum dolor sit amet 3" },
-          { "src": "assets/img/esignature/Illustrations-06.png", "altText": "Lorem ipsum dolor sit amet 3" }
-        ],
-        "url": "https://youtu.be/urz-b6R-CFA",
-        "urlName": "Ver vídeo"
-      },
-      {
         "title": "portfolio.graphicdesign.rabelo.title",
+        "slug": "rabelo",
         "previewImage": "assets/img/rabelo/Portada.png",
         "date": "2019",
         "description": "portfolio.graphicdesign.rabelo.description",
@@ -201,7 +158,24 @@
         ]
       },
       {
+        "title": "portfolio.graphicdesign.hellWillBeSweet.title",
+        "slug": "hell-will-be-sweet",
+        "previewImage": "assets/img/eisdst/Portada-sobrecubierta.jpg",
+        "date": "2016",
+        "description": "portfolio.graphicdesign.hellWillBeSweet.description",
+        "paragraphOne": "portfolio.graphicdesign.hellWillBeSweet.paragraphOne",
+        "paragraphTwo": "portfolio.graphicdesign.hellWillBeSweet.paragraphTwo",
+        "paragraphThree": "portfolio.graphicdesign.hellWillBeSweet.paragraphThree",
+        "technicalSpecs": "portfolio.graphicdesign.hellWillBeSweet.technicalSpecs",
+        "images": [
+          { "src": "assets/img/eisdst/Portada-sobrecubierta.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/eisdst/portada-interior.jpg", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/eisdst/Primera-pagina.jpg", "altText": "Lorem ipsum dolor sit amet 3" }
+        ]
+      },
+      {
         "title": "portfolio.graphicdesign.languageCatalog.title",
+        "slug": "language-catalog",
         "previewImage": "assets/img/catalogo/Catalogo.jpg",
         "date": "2018",
         "description": "portfolio.graphicdesign.languageCatalog.description",
@@ -215,6 +189,7 @@
       },
       {
         "title": "portfolio.illustration.belleEpoque.title",
+        "slug": "belle-epoque-prints",
         "previewImage": "assets/img/belle-epoque/mockup-pared.jpg",
         "date": "2018",
         "description": "portfolio.illustration.belleEpoque.description",
@@ -228,20 +203,26 @@
           { "src": "assets/img/belle-epoque/Mockup-fondo-negro.jpg", "altText": "Lorem ipsum dolor sit amet 2" }
         ]
       },
+
       {
-        "title": "portfolio.graphicdesign.hellWillBeSweet.title",
-        "previewImage": "assets/img/eisdst/Portada-sobrecubierta.jpg",
-        "date": "2016",
-        "description": "portfolio.graphicdesign.hellWillBeSweet.description",
-        "paragraphOne": "portfolio.graphicdesign.hellWillBeSweet.paragraphOne",
-        "paragraphTwo": "portfolio.graphicdesign.hellWillBeSweet.paragraphTwo",
-        "paragraphThree": "portfolio.graphicdesign.hellWillBeSweet.paragraphThree",
-        "technicalSpecs": "portfolio.graphicdesign.hellWillBeSweet.technicalSpecs",
+        "title": "portfolio.illustration.esignature.title",
+        "slug": "esignature",
+        "previewImage": "assets/img/esignature/Illustrations-05.png",
+        "date": "2022",
+        "description": "portfolio.illustration.esignature.description",
+        "paragraphOne": "portfolio.illustration.esignature.paragraphOne",
+        "paragraphTwo": "portfolio.illustration.esignature.paragraphTwo",
+        "technicalSpecs": "portfolio.illustration.esignature.technicalSpecs",
         "images": [
-          { "src": "assets/img/eisdst/Portada-sobrecubierta.jpg", "altText": "Lorem ipsum dolor sit amet 1" },
-          { "src": "assets/img/eisdst/portada-interior.jpg", "altText": "Lorem ipsum dolor sit amet 2" },
-          { "src": "assets/img/eisdst/Primera-pagina.jpg", "altText": "Lorem ipsum dolor sit amet 3" }
-        ]
+          { "src": "assets/img/esignature/esignature-video-1.png", "altText": "Lorem ipsum dolor sit amet 1" },
+          { "src": "assets/img/esignature/esignature-video-2.png", "altText": "Lorem ipsum dolor sit amet 2" },
+          { "src": "assets/img/esignature/esignature-video-3.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/esignature-video-4.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/Illustrations-05.png", "altText": "Lorem ipsum dolor sit amet 3" },
+          { "src": "assets/img/esignature/Illustrations-06.png", "altText": "Lorem ipsum dolor sit amet 3" }
+        ],
+        "url": "https://youtu.be/urz-b6R-CFA",
+        "urlName": "Ver vídeo"
       }
     ]
   },
@@ -250,6 +231,7 @@
     "projects": [
       {
         "title": "portfolio.web.niabellum.title",
+        "slug": "niabellum-web",
         "previewImage": "assets/img/niabellum/niabellum-mac.png",
         "date": "2020",
         "description": "portfolio.web.niabellum.description",
@@ -266,6 +248,7 @@
       },
       {
         "title": "portfolio.web.identech.title",
+        "slug": "identech-web",
         "previewImage": "assets/img/identech/mac-identech.png",
         "date": "2020",
         "description": "portfolio.web.identech.description",
@@ -282,6 +265,7 @@
       },
       {
         "title": "portfolio.web.reviewc.title",
+        "slug": "reviewc",
         "previewImage": "assets/img/reviewc/mobile-review.png",
         "date": "2019",
         "description": "portfolio.web.reviewc.description",
@@ -300,6 +284,7 @@
       },
       {
         "title": "portfolio.web.herder.title",
+        "slug": "language-catalog",
         "previewImage": "assets/img/herder/herder-suscriptions.png",
         "date": "2018",
         "description": "portfolio.web.herder.description",

@@ -38,6 +38,6 @@ const routes: Routes = [
     ProjectPageComponent,
   ],
   imports: [CommonModule, RouterModule.forChild(routes), TranslateModule],
-  exports: [GalleryComponent, MainPageComponent, TranslateModule, ProjectPageComponent, RouterModule],
+  exports: [GalleryComponent, MainPageComponent, TranslateModule, ProjectPageComponent, RouterModule, NavbarComponent],
 })
 export class PortfolioModule {}
