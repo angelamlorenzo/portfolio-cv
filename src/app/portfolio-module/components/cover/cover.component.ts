@@ -20,22 +20,25 @@ export class CoverComponent implements OnInit, OnDestroy {
   constructor(private typewriterService: TypewriterService, private translate: TranslateService) {}
 
   ngOnInit() {
-    this.loadTypedText();
-    this.subscription.add(this.translate.onLangChange.subscribe(() => this.loadTypedText()));
+    this.translate.onLangChange.subscribe((event) => {
+      this.loadTypedText(event.lang);
+    });
+
+    const initialLang = this.translate.currentLang || this.translate.getDefaultLang() || "en";
+    this.loadTypedText(initialLang);
   }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }
 
-  private loadTypedText() {
+  private loadTypedText(lang: string) {
     this.subscription.unsubscribe();
     this.subscription = new Subscription();
 
     this.typedText.next("");
 
-    const currentLang = this.translate.currentLang || "en";
-    const titles = currentLang === "es" ? this.titlesEs : this.titlesEn;
+    const titles = lang === "es" ? this.titlesEs : this.titlesEn;
 
     setTimeout(() => {
       const newSubscription = this.typewriterService.getTypewriterEffect(titles).subscribe((text) => {

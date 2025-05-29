@@ -14,7 +14,6 @@ export class NavbarComponent {
   @Output() selectMenuItem: EventEmitter<INavBar> = new EventEmitter();
 
   public currentLanguage: string = "es";
-
   public isProjectPage = false;
 
   constructor(private router: Router, private translate: TranslateService) {

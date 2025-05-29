@@ -13,6 +13,7 @@ import { TranslateService } from "@ngx-translate/core";
 export class MainPageComponent implements OnInit, OnDestroy {
   public selectedCategory: string = "Diseño Gráfico";
   public copyright: string = "copyright";
+  public angular: string = "angular";
 
   public tabsItem: ITabs[] = [
     { active: true, name: "portfolio.graphicdesign.category", id: "diseno-grafico", category: "Diseño Gráfico" },
