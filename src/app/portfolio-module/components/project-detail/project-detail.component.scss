@@ -21,4 +21,8 @@
       }
     }
   }
+  &__link {
+    position: relative;
+    z-index: 1100;
+  }
 }

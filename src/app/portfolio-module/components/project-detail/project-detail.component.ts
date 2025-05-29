@@ -29,6 +29,13 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
     sessionStorage.removeItem("selectedProject");
   }
 
+  public goToLink(): void {
+    const project = this.selectedProject?.getValue();
+    if (project && project.url) {
+      window.open(project.url, "_blank");
+    }
+  }
+
   private chooseProject(): void {
     this.loading = true;
 
@@ -49,6 +56,4 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
       }
     }, 200);
   }
-
-  public goToLink(): void {}
 }

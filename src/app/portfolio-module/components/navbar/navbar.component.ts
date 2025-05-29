@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { INavBar } from "../../models/interfaces";
 import { TranslateService } from "@ngx-translate/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-navbar",
@@ -13,11 +14,12 @@ export class NavbarComponent {
   @Output() selectMenuItem: EventEmitter<INavBar> = new EventEmitter();
 
   public currentLanguage: string = "es";
+  public isProjectPage = false;
 
-  constructor(private translate: TranslateService) {}
-
-  public setNavBarOption(selectedItem: INavBar): void {
-    this.navBar.forEach((navItem) => (navItem.active = navItem === selectedItem));
+  constructor(private router: Router, private translate: TranslateService) {
+    this.router.events.subscribe(() => {
+      this.isProjectPage = this.router.url.startsWith("/portfolio/");
+    });
   }
 
   ngOnInit() {
@@ -26,7 +28,11 @@ export class NavbarComponent {
     this.currentLanguage = currentLang;
   }
 
-  changeLanguage(lang: string) {
+  public setNavBarOption(selectedItem: INavBar): void {
+    this.navBar.forEach((navItem) => (navItem.active = navItem === selectedItem));
+  }
+
+  public changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLanguage = lang;
   }

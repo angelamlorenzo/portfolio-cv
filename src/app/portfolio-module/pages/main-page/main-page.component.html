@@ -1,5 +1,4 @@
 <div class="main-page">
-  <app-navbar [navBar]="navBar"></app-navbar>
   <div class="main-page__cover">
     <app-cover></app-cover>
   </div>
@@ -25,6 +24,7 @@
   </div>
   <div class="main-page__resume mt-5 bg-light" id="resume"><app-work-experience></app-work-experience></div>
   <div class="bg-dark-subtle text-center py-3">
-    <small class="text-secondary">&copy; {{ dateYear }}. {{ copyright | translate }}</small>
+    <small class="text-secondary">&copy; {{ dateYear }} · Ángela Lorenzo. {{ copyright | translate }}</small>
+    <small class="text-secondary d-block">{{ angular | translate }}<i class="bi bi-heart-fill ps-1"></i></small>
   </div>
 </div>

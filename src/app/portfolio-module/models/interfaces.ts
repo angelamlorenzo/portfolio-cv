@@ -29,7 +29,7 @@ export interface IGallery {
 
 export interface IProject {
   title: string;
-  key: string;
+  slug: string;
   previewImg: string;
   date: number;
   description: string;

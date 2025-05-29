@@ -1,5 +1,4 @@
-// project-page.component.ts
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnDestroy, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { PortfolioService } from "../../services/portfolio.service";
 import { IProject } from "../../models/interfaces";
@@ -12,34 +11,57 @@ import { TranslateService } from "@ngx-translate/core";
   styleUrls: ["./project-page.component.scss"],
 })
 export class ProjectPageComponent implements OnInit, OnDestroy {
-  public selectedProject: BehaviorSubject<IProject> = new BehaviorSubject<IProject>({} as IProject);
-  public projectTitle: string = "";
-  public category: string = "";
-  public loading: boolean = false;
-  private subscription: Subscription = new Subscription();
+  public selectedProject = new BehaviorSubject<IProject>({} as IProject);
+  public category = "";
+  public currentLanguage = "en";
 
-  public currentLanguage: string = "en";
+  private categorySlug = "";
+  private subscription = new Subscription();
+
+  private slugToTranslationKey: { [slug: string]: string } = {
+    "graphic-design": "portfolio.graphicdesign.category",
+    illustration: "portfolio.illustration.category",
+    web: "portfolio.web.category",
+  };
 
   constructor(private route: ActivatedRoute, private portfolioService: PortfolioService, private translate: TranslateService) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      this.category = params["category"];
-      this.category = this.category.replace(/-/g, " ");
-    });
+    this.currentLanguage = this.translate.currentLang || this.translate.getDefaultLang() || "es";
+
+    this.subscription.add(
+      this.route.params.subscribe(({ category }) => {
+        this.categorySlug = category;
+        this.translateCategory();
+      })
+    );
+
+    this.subscription.add(
+      this.translate.onLangChange.subscribe(() => {
+        this.currentLanguage = this.translate.currentLang;
+        this.translateCategory();
+      })
+    );
 
     this.subscription.add(
       this.portfolioService.selectedProject.subscribe((project) => {
         this.selectedProject.next(project);
       })
     );
-
-    this.translate.setDefaultLang("en");
-    const currentLang = this.translate.currentLang || "es";
-    this.currentLanguage = currentLang;
   }
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  private translateCategory(): void {
+    const key = this.slugToTranslationKey[this.categorySlug];
+    if (key) {
+      this.translate.get(key).subscribe((translated) => {
+        this.category = translated;
+      });
+    } else {
+      this.category = this.categorySlug.replace(/-/g, " ");
+    }
   }
 }

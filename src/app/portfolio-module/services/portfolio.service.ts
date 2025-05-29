@@ -11,6 +11,7 @@ export class PortfolioService {
   constructor(private http: HttpClient) {}
 
   public selectedProject: BehaviorSubject<IProject> = new BehaviorSubject({} as IProject);
+  public selectedCategory: BehaviorSubject<string> = new BehaviorSubject("Diseño Gráfico");
 
   public getGallery(): Observable<IGallery[]> {
     const url = assetUrl("/data/portfolio-data.json");
