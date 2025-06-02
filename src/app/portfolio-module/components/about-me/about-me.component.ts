@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: "app-about-me",
@@ -10,12 +11,15 @@ export class AboutMeComponent {
   public paragraphOne: string = "aboutMe.paragraphOne";
   public paragraphTwo: string = "aboutMe.paragraphTwo";
   public buttonCv: string = "aboutMe.downloadCvButton";
-  public pdfCv: string = "assets/documents/angelamlorenzo_cv.pdf";
   public linkedIn: string = "https://www.linkedin.com/in/angela-m-lorenzo";
   public email: string = "mailto:angelamlorenzo@gmail.com";
 
+  constructor(private translate: TranslateService) {}
+
   public resume(): void {
-    window.open(this.pdfCv, "_blank");
+    const lang = this.translate.currentLang || "en";
+    const pdfCv = lang === "es" ? "assets/documents/angelamlorenzo_cv.pdf" : "assets/documents/angelamlorenzo_resume.pdf";
+    window.open(pdfCv, "_blank");
   }
 
   public openLinkedIn(): void {
