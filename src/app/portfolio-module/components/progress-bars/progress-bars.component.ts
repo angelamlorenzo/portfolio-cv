@@ -13,7 +13,7 @@ export class ProgressBarsComponent {
     { percent: 95, skill: "HTML" },
     { percent: 80, skill: "CSS" },
     { percent: 90, skill: "Bootstrap" },
-    { percent: 75, skill: "JavaScript" },
+    { percent: 75, skill: "TypeScript" },
     { percent: 85, skill: "Angular" },
   ];
 
