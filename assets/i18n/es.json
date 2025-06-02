@@ -1,0 +1,198 @@
+{
+  "header": {
+    "aboutMe": "Sobre mí",
+    "skills": "Habilidades",
+    "portfolio": "Portfolio",
+    "resume": "Currículum",
+    "language": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "cover": {
+    "hello": "¡Hola!",
+    "introduction": "Mi nombre es Ángela",
+    "andIm": "y soy"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "paragraphOne": "Soy una trabajadora multidisciplinar cuyo motor es la curiosidad, lo que me convierte en una profesional versátil, siempre dispuesta a explorar nuevas formas de crear, innovar y resolver.",
+    "paragraphTwo": "Mi pasión por el diseño y la creatividad me lleva a descubrir constantemente nuevas formas de expresión, ya sea a través de identidades visuales, proyectos editoriales o experiencias digitales. Me encanta combinar creatividad y funcionalidad para ofrecer soluciones únicas que conecten con el usuario final, transmitiendo el mensaje para el que han sido creadas. Si quieres colaborar o simplemente intercambiar ideas, ¡estoy aquí para ayudarte a dar vida a tus proyectos!",
+    "downloadCvButton": "Descargar CV"
+  },
+  "skills": {
+    "title": "Habilidades y herramientas"
+  },
+  "portfolio": {
+    "graphicdesign": {
+      "category": "Diseño Gráfico",
+      "bankMagazine": {
+        "title": "Artículo en Bank Magazine",
+        "description": "Una solución gráfica y editorial para explicar cómo la tecnología respondió a la urgencia sanitaria",
+        "paragraphOne": "En este artículo publicitario, publicado en la revista BANK en julio de 2020, no solo realizo la maquetación y los gráficos, sino que desgrano al completo cómo la Identidad Digital se convirtió en una herramienta clave durante la pandemia del COVID-19, en la que fue cada vez más imperativo un proceso de identificación remoto seguro y acorde a la legislación europea.",
+        "paragraphTwo": "La propuesta aportada por Euronovate Group era tapID (en la actualidad, ya disuelta e integrada dentro de otros productos de la compañía), una solución de Identidad Digital que cubre el proceso de identificación electrónica al completo.",
+        "technicalSpecs": "Página doble en una revista tamaño A4 (21 x 279 mm)."
+      },
+      "toTheMoon": {
+        "title": "Fly me to the Moon",
+        "description": "Diseño editorial con memoria histórica: una mirada gráfica a la Carrera Espacial",
+        "paragraphOne": "Esta propuesta sobre la Carrera Espacial surgió cuando se acercaba el 49º aniversario de la llegada del hombre a la Luna",
+        "paragraphTwo": "Decidí hacer una maquetación con una estructura muy sólida, en la que la tipografía también tuviera un gran peso a nivel compositivo. En cuanto a la gama de colores, mi intención era representar la polaridad de la época usando el color base de los trajes espaciales: azul para EE.UU., en referencia al traje Apolo A-5L y naranja para la URSS, debido al traje de Yuri Gagarin.",
+        "paragraphThree": "Los textos están extraidos de noticias originales de la época.",
+        "technicalSpecs": "56 páginas en papel estucado brillante de 150 gr, tamaño A5 (210 × 148 mm // Encuadernación rústica, portada en estucado mate de 350 gr."
+      },
+      "rabelo": {
+        "title": "O Lobo Rabelo",
+        "description": "Un salto al álbum infantil desde la retranca gallega y el collage digital",
+        "paragraphOne": "A pesar de mi larga relación con la ilustración, no mostré mucho interés en el álbum ilustrado para niños; en general, mi público se centraba en adolescentes y adultos.",
+        "paragraphTwo": "Sin embargo, durante la época en la tomé clases con el ilustrador Dani Torrent, finalmente me decidí a salir de mi zona de confort. Dado que iba a lanzarme a la piscina con el collage digital y el público al que iba dirigido, aproveché la ocasión para dibujar un cuento gallego, de esos de larga tradición familiar, repleto de la retranca y el humor que caracterizan a la parte noroccidental de España.",
+        "technicalSpecs": "32 páginas en papel estucado mate de 200 gr, tamaño A4 (210 x 297 mm) // Encuadernación en cartoné."
+      },
+      "hellWillBeSweet": {
+        "title": "El Infierno será dulce sin ti",
+        "description": "Entre la línea y la leyenda: una historia ilustrada sobre la creación y sus consecuencias",
+        "paragraphOne": "Este libro ilustrado es un trabajo personal, tanto a nivel de dibujo como de escritura, que narra la historia del joven Víctor Gris.",
+        "paragraphTwo": "Víctor es un artista que, tras un largo tiempo de convivencia con su maestro, es maldecido (¿o quizás bendecido?) con el don de crear vida a partir de sus obras. Con esto, nuestro protagonista tendrá que lidiar con esta habilidad y con problemáticas que se remontan al Frankenstein de Mary Shelley y al Dorian Gray de Oscar Wilde.",
+        "paragraphThree": "Las ilustraciones están realizadas con línea de bolígrafo negro, en una especie de reminiscencia del grabado de finales del s.XIX.",
+        "technicalSpecs": "60 páginas en papel offset gris de 140 gr, 180 x 240 mm // Encuadernación cosida en cartoné forrado en tela, con sobrecubierta del mismo papel que el interior."
+      },
+      "folie": {
+        "title": "Folie à deux",
+        "description": "Fragmentos de diálogos que dibujan el mapa emocional de una etapa vital",
+        "paragraphOne": "Este libro reúne treinta y dos conversaciones entre una persona (madre, amigos, novio, compañeros de clase, etc.) y yo misma. Estos diálogos están sacados de mensajes de texto, redes sociales, notas guardadas y, por supuesto, mi memoria.",
+        "paragraphTwo": "Al igual que cambia la persona a la que me dirijo, el tono de la conversación también oscila de forma continuada: tenemos páginas que nos muestran charlas alegres o tristes, distendidas o meditabundas. Se trata de un reflejo muy certero e incisivo de mi vida como estudiante universitaria y del cambio de la adolescencia a la vida de joven adulta.",
+        "paragraphThree": "El título nos habla de cómo algo tan cotidiano como mantener una conversación puede desembocar en una “locura compartida” o “locura a dos bandas” (Folie à deux).",
+        "technicalSpecs": "65 páginas a color en papel estucado mate de 150 gr, tamaño A5 (210 × 148 mm) // Encuadernación rústica, portada en estucado mate 350gr."
+      },
+      "languageCatalog": {
+        "title": "Catálogo de Idiomas",
+        "description": "Una travesía ilustrada por los idiomas y sus caminos de aprendizaje",
+        "paragraphOne": "Herder Editorial es especialmente conocida por su amplia oferta de idiomas, de forma que todos los años precisan un catálogo impreso que muestre su gran abanico de métodos de aprendizaje.",
+        "paragraphTwo": "El concepto del viaje y de la comunicación debían estar presentes en la portada, por lo que realicé una ilustración acorde a esa temática, además de un par de promos de novedades para el interior.",
+        "technicalSpecs": "Papel estucado con laminado brillante, 200 gr // Encuadernación grapada, 160 x 219 mm."
+      },
+      "ensign": {
+        "title": "ENSIGN 11 & ENSIGN 11 NFC",
+        "description": "Diseño gráfico al servicio de la innovación tecnológica",
+        "paragraphOne": "ENSIGN 11 es una tableta de 10' 1’’ con pantalla táctil a color destinada no solo a la firma, sino a la presentación de contenido que la empresa propietaria pueda considerar informativo o beneficioso para sus fines. La versatilidad de ENSIGN 11 ha hecho que, paulatinamente, puedan añadirse otras funcionalidades, como es el caso de la tecnología NFC.",
+        "paragraphTwo": "Este folleto se diseñó con el fin de transmitir las cualidades de ambos productos, posibles casos de uso e información técnica, para así ayudar al público objetivo a elegir la tableta que más se amolde a sus necesidades.",
+        "technicalSpecs": "Folleto de 12 páginas impreso en papel estucado mate de 170 gr, tamaño A4 horizontal (297 x 210 mm) // Portada en papel estucado mate de 300gr."
+      },
+      "newsletters": {
+        "title": "Newsletters Estacionales",
+        "description": "Diseñando vínculos desde el correo electrónico hasta la colaboración",
+        "paragraphOne": "En lo que respecta al email marketing de una empresa, es tan importante afianzar la comunicación con el cliente como con los propios trabajadores. Por ello, dentro de Euronovate Group se plantearon comunicaciones y newsletters internas para mantener a empleados y colaboradores al tanto de las últimas novedades del grupo.",
+        "paragraphTwo": "Todas estas comunicaciones están construidas en HTML y CSS, atendiendo a los criterios de los proveedores de correo más habituales, y gráficos vectoriales adecuados a la situación o diseño requeridos.",
+        "technicalSpecs": "Diseño inicial planteado en Figma. Newsletters desarrolladas en HTML y CSS // Gráficos vectoriales e ilustraciones creadas en Adobe Illustrator."
+      },
+      "enGroupIdentity": {
+        "title": "Nueva Identidad para Euronovate Group",
+        "description": "Identidad, papelería y web al compás de una nueva visión corporativa",
+        "paragraphOne": "2021 fue un año de transformación para Euronovate Group, y eso debía verse reflejado en su marca. Su identidad, hasta entonces roja y angulosa, se modernizó con un tono naranja muy actual y formas más dinámicas.",
+        "paragraphTwo": "Este cambio radical, como no podía ser de otro modo, afectó no solo en la creación de un nuevo Manual de Identidad y en el diseño de una nueva papelería, sino en la transformación total de su página web.",
+        "technicalSpecs": "Guía de estilo de 15 páginas impresa en papel estucado mate de 170 gr, tamaño A4 horizontal (297 x 210 mm). // Portada en papel estucado mate de 300gr. // Web diseñada en Adobe Xd y desarrollada en WordPress. // Tarjetas de visita de 85 x 55 mm impresas en papel estucado mate de 350 gr. "
+      },
+      "nebulaAccess": {
+        "title": "Catálogo de nebulaACCESS",
+        "description": "Diseñando claridad en un entorno de autenticación cada vez más complejo",
+        "paragraphOne": "nebulaACCESS, la solución de Autenticación Dinámica Multifactor Adaptativa de nebulaSUITE, inaugura su modalidad SaaS (Software as a Service) con un nuevo folleto. En este se ahonda en los distintos tipos de autenticación de la herramienta, cómo pueden configurarse, sus características y sus beneficios.",
+        "paragraphTwo": "La imagen corporativa a seguir es la de la familia de productos nebulaSUITE, con su azul característico, ya renovada y perfeccionada tras la salida del módulo de video identificación remota de nebulaSUITE, nebulaID, en el primer trimestre de 2022.",
+        "technicalSpecs": "Folleto de 12 páginas, tamaño A4 horizontal (297 x 210 mm)."
+      }
+    },
+    "illustration": {
+      "category": "Ilustración",
+      "belleEpoque": {
+        "title": "Láminas de la Belle Époque",
+        "description": "Ilustración, simbolismo y modernismo en una serie de personajes con alma propia",
+        "paragraphOne": "Una de las cosas que más disfruto de la ilustración es el diseño de personajes, especialmente si estos son creados por mí. En este caso, el diseño de personaje dio un paso más allá y evolucionó hasta una serie de láminas de inspiración modernista, hecha con tinta y distintos colores de gouache metalizado.",
+        "paragraphTwo": "La creación de las láminas conllevó una pequeña investigación, dado que cada personaje va acompañado de una serie de flores que representan algún aspecto de su personalidad.",
+        "paragraphThree": "Una edición limitada y numerada de algunas de estas láminas estuvo a la venta en la galería de arte REC32 durante 2021 y parte de 2022.",
+        "technicalSpecs": "Ilustraciones a tinta y gouache metálico en tamaño A4 (210 x 297 mm) // Papel Majestic color crema, 250 gr."
+      },
+      "esignature": {
+        "title": "Ilustraciones para firma electrónica",
+        "description": "Un proyecto audiovisual para dar forma a un ecosistema de firma digital",
+        "paragraphOne": "En ocasiones, la mejor forma de condensar un amplio portafolio de productos es convertirlo en un proyecto visual.",
+        "paragraphTwo": "En este vídeo, en el que participé realizando las ilustraciones que lo componen, se expone cómo el número de documentos que precisan firmarse incrementa, y la creciente demanda de soluciones seguras y rápidas por parte de instituciones, empresas y clientes. Euronovate Group cubre esta necesidad con su hardware y software, en cualquiera de las casuísticas posibles: firma en oficina, biométrica o remota.",
+        "technicalSpecs": "Ilustraciones creadas en Adobe Illustrator.",
+        "url": "Ver vídeo"
+      }
+    },
+    "web": {
+      "category": "Web",
+      "niabellum": {
+        "title": "Niabellum Web",
+        "description": "Minimalismo estratégico para dar visibilidad y control a una creativa visual",
+        "paragraphOne": "Niabellum es una ilustradora y diseñadora gráfica freelance que acudió a mí con el propósito de rediseñar su web. El nuevo concepto se basó en la sencillez y la supremacía de lo visual, con el fin de que resaltasen sus trabajos y fueran sencillos de organizar y localizar.",
+        "paragraphTwo": "La página fue realizada en WordPress, atendiendo a las necesidades de gestión y subida continuada de contenido que posee la destinataria de la web. ",
+        "technicalSpecs": "Creación de web basada en WordPress"
+      },
+      "herder": {
+        "title": "Herder Suscripciones",
+        "description": "Diseño de la estructura visual y operativa de un portal editorial escalable",
+        "paragraphOne": "Mi trabajo en Herder consistía principalmente en colaborar en el Departamento Digital como diseñadora gráfica y desarrollar junto a los programadores el Portal de Suscripción de la Civiltá Cattolica Iberoamericana (revista de Herder Editorial). Este portal más tarde se expandiría para convertirse en Herder Suscripciones, y así acoger al resto de revistas de la editorial, tanto impresas como digitales.",
+        "paragraphTwo": "Mi aportación fue el diseño base o prototipo del portal, con sus secciones de suscripción, pedidos, contenidos, etc. Sobre este concepto se sustentaría la maquetación y programación del sitio web.",
+        "technicalSpecs": "Diseño UI en Adobe Illustrator"
+      },
+      "identech": {
+        "title": "Identech Web",
+        "description": "Diseño web claro y jerárquico para una empresa que digitaliza procesos complejos",
+        "paragraphOne": "Identech es una empresa, localizada en Estambul, que provee servicios de Firma Electrónica e Identidad Biométrica, con el fin de llevar los procesos analógicos de sus clientes al ámbito digital.",
+        "paragraphTwo": "Por tanto, necesitaban una web que mostrase de forma accesible su carta de servicios y su misión como empresa, además de una forma de contacto o de solicitar una demo de sus productos. El resultado fue una web funcional y estructurada en jerarquías según la categoría del producto, con una estética alineada con la de la empresa y, a la vez, dotada de un toque accesible y dinámico.",
+        "technicalSpecs": "Web desarrollada en WordPress // Iconos y gráficos creados en Adobe Illustrator."
+      },
+      "reviewc": {
+        "title": "Reviewc",
+        "description": "Facilitando lo inevitable con diseño, accesibilidad y un toque de humor",
+        "paragraphOne": "El diseño UX/IU de esta app es un concepto personal que desarrollé durante mi formación en Desarrollo de Productos Multimedia.",
+        "paragraphTwo": "Reviewc, a diferencia de otras Apps de lavabos, no solo te indica qué lavabo público está más cerca, sino que se centran en el estado y accesibilidad de cualquier lavabo, sea público o de un local: si tiene cambiador, baño para minusvalía, su estado de limpieza… La premisa es, por tanto, el facilitar el paso de la gente por los lavabos una vez salen de su casa.",
+        "paragraphThree": "La interfaz transmite una sensación de limpieza y pragmatismo, pero sin dejar de lado el frescor y la chispa.",
+        "technicalSpecs": "Diseño IU en Figma"
+      },
+      "seeWeb": "Visitar web"
+    },
+    "goBack": "Volver a la página principal"
+  },
+  "resume": {
+    "title": "Currículum",
+    "workExperience": {
+      "title": "Carrera",
+      "juniorDev": "Desarrolladora Front End Junior",
+      "today": "2023-",
+      "graphicDesignerWeb": "Diseñadora Gráfica y Web",
+      "graphicDesignerIllustration": "Diseñadora Gráfica e Ilustradora",
+      "graphicWebIllustration": "Diseñadora Gráfica/Web e Ilustradora",
+      "vintegrisFront": "Desarrollo de la solución de identidad digital nebulaSUITE mediante microsites con Angular y Bootstrap.",
+      "vintegris": "Branding, folletos, dossieres, presentaciones, papelería y datasheets de productos. Contenido para redes sociales y edición de imagen. Diseño IU/UX. Mantenimiento y gestión de las webs de la compañía con WordPress. Ilustración digital. Diseño y maquetación de newsletters y email marketing.",
+      "mediaMotive": "Maquetación de landings en CSS y HTML con Bootstrap. Creación de publicidad web con Google Web Designer, Photoshop e Illustrator.",
+      "freelance": "Ilustraciones y diseño gráfico enfocado a proyectos multimedia. Diseño editorial. Branding. Creación de páginas en WordPress.",
+      "herder": "Diseño de material gráfico para web y RRSS, diseño editorial (portadas,maquetación), catálogos, cartelería, email marketing. Diseño de Interfaz (IU) del Portal de Suscripción de Herder. Desarrollo de Branding, contenido para web y redes e ilustraciones para Filosofía & Co.",
+      "xanino": "Diseño de cartelería, flyers, folletos, iconos, material gráfico para RRSS, ilustración vectorial y tradicional."
+    },
+    "education": {
+      "title": "Educación",
+      "complementaryTitle": "Educación complementaria",
+      "certProf": "Desarrollo de Productos Editoriales Multimedia",
+      "certProfText": "Certificado de Profesionalidad, nvl. 3",
+      "cfgs": "CFGS en Artes Plásticas y Diseño en Ilustración",
+      "degree": "Grado en Bellas Artes",
+      "illustration": "Técnicas aplicadas a la ilustración",
+      "typographic": "Arquitectura tipográfica y maquetación",
+      "labDig": "Creación, edición y promoción de contenidos y servicios digitales (LABDig)"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanishGalician": "Español | Gallego",
+      "english": "Inglés",
+      "germanCatalan": "Alemán | Catalán",
+      "native": "Nativo",
+      "basic": "Básico",
+      "mediumHigh": "Medio-Alto"
+    },
+    "seeLess": "Ver menos",
+    "seeMore": "Ver más"
+  },
+  "copyright": "Todos los derechos reservados.",
+  "angular": "Hecho en Angular con"
+}

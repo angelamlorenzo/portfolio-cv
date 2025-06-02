@@ -1,0 +1,198 @@
+{
+  "header": {
+    "aboutMe": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "resume": "Resume",
+    "language": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "cover": {
+    "hello": "Hello!",
+    "introduction": "My name is Ángela",
+    "andIm": "and I'm a"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "paragraphOne": "I am a multidisciplinary worker driven by curiosity, which makes me a versatile professional, always willing to explore new ways to create, innovate, and solve problems.",
+    "paragraphTwo": "My passion for design and creativity leads me to constantly discover new ways of expression, whether through visual identities, editorial projects, or digital experiences. I love combining creativity and functionality to offer unique solutions that connect with the end user, clearly delivering the message they were designed to express If you're looking to collaborate or simply exchange ideas, I'm here to help you bring your projects to life!",
+    "downloadCvButton": "Download CV"
+  },
+  "skills": {
+    "title": "Skills & Tools"
+  },
+  "portfolio": {
+    "graphicdesign": {
+      "category": "Graphic Design",
+      "bankMagazine": {
+        "title": "Article in Bank Magazine",
+        "description": "A graphic and editorial solution to explain how technology responded to the health emergency",
+        "paragraphOne": "In this advertising article, published in BANK magazine in July 2020, I did not only design the layout and graphics, but also fully explained how Digital Identity became a key tool during the COVID-19 pandemic, when a secure remote identification process that complied with European legislation became increasingly imperative.",
+        "paragraphTwo": "The proposal submitted by Euronovate Group was tapID (now dissolved and integrated into the company's other products), a Digital Identity solution that covers the entire electronic identification process.",
+        "technicalSpecs": "Double page spread in an A4 magazine (21 x 27.9 cm)."
+      },
+      "toTheMoon": {
+        "title": "Fly me to the Moon",
+        "description": "Editorial design with historical memory: a graphic look at the Space Race",
+        "paragraphOne": "This proposal on the Space Race arose as the 49th anniversary of man's arrival on the Moon was close to be celebrated.",
+        "paragraphTwo": "I decided to create a layout with a very solid structure, where typography also played a significant role in the composition. As for the color scheme, my intention was to represent the polarization of the era using the base color of spacesuits: blue for the US, in reference to the Apollo A-5L suit, and orange for the USSR, in reference to Yuri Gagarin's suit.",
+        "paragraphThree": "The texts are extracted from original news reports of that time.",
+        "technicalSpecs": "56 pages on 150g glossy coated paper, A5 size (210 × 148 mm) // Soft cover binding, 350g matte coated paper."
+      },
+      "rabelo": {
+        "title": "O Lobo Rabelo",
+        "description": "A leap into children's albums with digital collage and Galician's wit",
+        "paragraphOne": "Despite my long relationship with illustration, I didn't show much interest in children's picture books; my audience was generally focused on teenagers and adults.",
+        "paragraphTwo": "However, during the time I was taking classes with illustrator Dani Torrent, I finally decided to step out of my comfort zone. Given that I was about to take the plunge with digital collage and its target audience, I took the opportunity to draw a Galician story, one of those long-standing family traditions, full of the wit and humor that characterize the northwestern part of Spain.",
+        "technicalSpecs": "32 pages on 200g matte coated paper, A4 size (210 x 297 mm) // Cardboard binding."
+      },
+      "hellWillBeSweet": {
+        "title": "El Infierno será dulce sin ti",
+        "description": "Between line and legend: an illustrated history of creation and its consequences",
+        "paragraphOne": "This illustrated book is a personal work, both in drawing and writing, that tells the story of the young Víctor Gris.",
+        "paragraphTwo": "Victor is an artist who, after a long time living with his master, is cursed (or perhaps blessed?) with the gift of creating life from his works. From this, our protagonist will have to deal with this ability and with problems that go back to Mary Shelley's Frankenstein and Oscar Wilde's Dorian Gray.",
+        "paragraphThree": "The illustrations were made with a black ballpoint pen line, in a kind of reminiscence of the engraving of the late 19th century.",
+        "technicalSpecs": "60 pages on 140g grey offset paper, 180 x 240 mm // Sewn binding in fabric-covered cardboard, with a dust jacket made of the same paper as the interior."
+      },
+      "folie": {
+        "title": "Folie à deux",
+        "description": "Fragments of dialogues that draw the emotional map of a vital stage",
+        "paragraphOne": "This book brings together thirty-two conversations between a person (mother, friends, boyfriend, classmates, etc.) and myself. These dialogues were taken from text messages, social media, saved notes, and, of course, my memory.",
+        "paragraphTwo": "The tone of the conversation fluctuates constantly as the person I'm addressing changes: different pages show us happy or sad, relaxed or thoughtful conversations. It's a very accurate and incisive reflection of my life as a university student and the transition from adolescence to young adulthood.",
+        "paragraphThree": "The title tells us how something as mundane as having a conversation can lead to “shared madness” or “two-way madness” (Folie à deux).",
+        "technicalSpecs": "65 color pages on 150g matte coated paper, A5 size (210 × 148 mm) // Softcover binding, 350g matte coated cover."
+      },
+      "languageCatalog": {
+        "title": "Languages catalog",
+        "description": "An illustrated journey through languages and their learning paths",
+        "paragraphOne": "Herder Editorial is particularly known for its wide range of languages, so every year they require a printed catalog showcasing their wide range of learning methods.",
+        "paragraphTwo": "The concept of travel and communication had to be present on the cover, that's why I created an illustration in keeping with that subject, as well as a couple of new product promos for the interior.",
+        "technicalSpecs": "Glossy coated paper, 200 g // Stapled binding, 160 x 219 mm."
+      },
+      "ensign": {
+        "title": "ENSIGN 11 & ENSIGN 11 NFC",
+        "description": "Graphic design at the service of technological innovation",
+        "paragraphOne": "ENSIGN 11 is a 10’ 1” color touchscreen tablet designed not only for signing, but also for presenting content that the owner company may find informative or beneficial for its purposes. The versatility of ENSIGN 11 has allowed other features to be gradually added, such as NFC technology.",
+        "paragraphTwo": "This brochure was designed to convey the features of both products, potential use cases, and technical information, helping the target audience choose the tablet that best suits their needs.",
+        "technicalSpecs": "12-page brochure printed on 170g matte coated paper, A4 landscape size (297 x 210 mm) // Cover on 300g matte coated paper."
+      },
+      "newsletters": {
+        "title": "Seasonal newsletters",
+        "description": "Designing links from email to collaboration",
+        "paragraphOne": "When it comes to a company's email marketing, strengthening communication with customers is just as important as it is with employees. Therefore, Euronovate Group developed internal communications and newsletters to keep employees and collaborators up to date with the group's latest news.",
+        "paragraphTwo": "All of these communications are built in HTML and CSS, following the criteria of the most common email providers, and vector graphics appropriate to the required situation or design.",
+        "technicalSpecs": "Initial design proposed in Figma. Newsletters developed in HTML and CSS // Vector graphics and illustrations created in Adobe Illustrator."
+      },
+      "enGroupIdentity": {
+        "title": "Euronovate Group's new visual identity",
+        "description": "Identity, stationery and website in step with a new corporate vision",
+        "paragraphOne": "2021 was a year of transformation for Euronovate Group, and that had to be reflected in its brand. Its previously red and angular identity was modernized with a contemporary orange hue and more dynamic shapes.",
+        "paragraphTwo": "This radical change, as expected, affected not only the creation of a new Identity Manual and the design of new stationery, but also the complete transformation of its website.",
+        "technicalSpecs": "15-page style guide printed on 170g matte coated paper, A4 landscape (297 x 210 mm) // Cover on 300g matte coated paper // Website designed in Adobe Xd and developed in WordPress // 85 x 55 mm business cards printed on 350g matte coated paper."
+      },
+      "nebulaAccess": {
+        "title": "nebulaACCESS Brochure",
+        "description": "Designing clarity in an increasingly complex authentication environment",
+        "paragraphOne": "nebulaACCESS, nebulaSUITE's Adaptive Multi-Factor Dynamic Authentication solution, launches its SaaS (Software as a Service) modality with a new brochure. It delves into the tool's different authentication types, how they can be configured, their features, and their benefits.",
+        "paragraphTwo": "The corporate image follows the nebulaSUITE product family, with its characteristic blue, already renewed and refined following the release of the nebulaSUITE remote video identification module, nebulaID, in the first quarter of 2022.",
+        "technicalSpecs": "12-page brochure, A4 horizontal size (297 x 210 mm)."
+      }
+    },
+    "illustration": {
+      "category": "Illustration",
+      "belleEpoque": {
+        "title": "Belle Époque prints",
+        "description": "Illustration, symbolism, and modernism in a series of characters with a soul of their own",
+        "paragraphOne": "One of the things I enjoy the most about illustration is character design, especially if I create the characters myself. In this case, the character design took a step further and evolved into a series of modernist-inspired prints, created with ink and different metallic gouache colors.",
+        "paragraphTwo": "Creating the prints involved a little research, as each character is accompanied by a series of flowers that represent some aspect of their personality.",
+        "paragraphThree": "A limited and numbered edition of some of these prints was on sale at the REC32 art gallery during 2021 and part of 2022.",
+        "technicalSpecs": "Ink and metallic gouache illustrations in A4 size (210 x 297 mm) // Majestic cream-colored paper, 250 g."
+      },
+      "esignature": {
+        "title": "Illustrations about electronic signature",
+        "description": "An audiovisual project to shape a digital signature ecosystem",
+        "paragraphOne": "Sometimes the best way to condense a broad product portfolio is to turn it into a visual project.",
+        "paragraphTwo": "This video, where I participated creating the illustrations, shows how the number of documents requiring signature is increasing, along with the growing demand for secure and rapid solutions from institutions, businesses, and clients. Euronovate Group addresses this need with its hardware and software, in any possible scenario: in-branch, biometric, or remote signature.",
+        "technicalSpecs": "Illustrations created in Adobe Illustrator.",
+        "url": "Watch video"
+      }
+    },
+    "web": {
+      "category": "Web",
+      "niabellum": {
+        "title": "Niabellum Website",
+        "description": "Strategic minimalism to give visibility and control to a visual creative",
+        "paragraphOne": "Niabellum is a freelance illustrator and graphic designer who came to me to redesign her website. The new concept was based on simplicity and visual supremacy, aiming to make her work stand out and be easy to organize and locate.",
+        "paragraphTwo": "The page was created in WordPress, addressing the needs of the recipient of the website for continuous content management and uploading. ",
+        "technicalSpecs": "WordPress-based website creation"
+      },
+      "herder": {
+        "title": "Herder Subscriptions",
+        "description": "Design of the visual and operational structure of a scalable editorial portal",
+        "paragraphOne": "My work at Herder consisted primarily of collaborating with the Digital Department as a graphic designer and, alongside the programmers, developing the Subscription Portal for the Ibero-American Civiltá Cattolica (Herder Editorial's magazine). This portal would later expand to become Herder Subscriptions, thus incorporating the publisher's other magazines, both print and digital.",
+        "paragraphTwo": "My contribution was the basic design or prototype of the portal, with its subscription, ordering, content, etc. sections. This concept would underpin the website's layout and programming.",
+        "technicalSpecs": "UI Design in Adobe Illustrator"
+      },
+      "identech": {
+        "title": "Identech Website",
+        "description": "Clear and hierarchical web design for a company that digitizes complex processes",
+        "paragraphOne": "Identech is an Istanbul-based company that provides electronic signature and biometric identity services to bring its clients' analog processes into the digital field.",
+        "paragraphTwo": "Therefore, they needed a website that would easily showcase their service offerings and their mission, as well as a way to contact them or request a demo of their products. The result was a functional website structured in hierarchies by product category, with an aesthetic aligned with the company's, yet also imbued with an accessible and dynamic feel.",
+        "technicalSpecs": "Website developed in WordPress // Icons and graphics created in Adobe Illustrator."
+      },
+      "reviewc": {
+        "title": "Reviewc",
+        "description": "Facilitating the inevitable with design, accessibility, and a touch of humor",
+        "paragraphOne": "The UX/UI design of this app is a personal concept that I developed during my training in Multimedia Product Development.",
+        "paragraphTwo": "Reviewc, unlike other restroom apps, doesn't only tell you the closest public restroom. Instead, it focuses on the condition and accessibility of any restroom, public or inside a business: whether it has a changing table, a disabled-accessible restroom, its cleanliness, and so on. The goal, therefore, is to make it easier for people to access restrooms once they leave their homes.",
+        "paragraphThree": "The interface conveys a sense of cleanliness and pragmatism, but without losing its freshness and sparkle.",
+        "technicalSpecs": "UI Design in Figma"
+      },
+      "seeWeb": "Visit Website"
+    },
+    "goBack": "Go back to the main page"
+  },
+  "resume": {
+    "title": "Resume",
+    "workExperience": {
+      "title": "Career",
+      "juniorDev": "Junior Front End Developer",
+      "today": "2023-",
+      "graphicDesignerWeb": "Graphic and Web Designer",
+      "graphicDesignerIllustration": "Graphic Designer and Illustrator",
+      "graphicWebIllustration": "Graphic/Web Designer and Illustrator",
+      "vintegrisFront": "Development of the nebulaSUITE digital identity solution using microsites with Angular and Bootstrap.",
+      "vintegris": "Branding, brochures, dossiers, presentations, stationery, and product data sheets. Social media content and image editing. UI/UX design. Maintenance and management of the company's websites with WordPress. Digital illustration. Design and layout of newsletters and email marketing.",
+      "mediaMotive": "Landing page layout in CSS and HTML using Bootstrap. Web ad creation using Google Web Designer, Photoshop, and Illustrator.",
+      "freelance": "Illustrations and graphic design focused on multimedia projects. Editorial design. Branding. WordPress website creation.",
+      "herder": "Graphic design for websites and social media, editorial design (covers, layout), catalogs, posters, email marketing. UI design for Herder's Subscription Portal. Branding development, web and social media content, and illustrations for Filosofía & Co.",
+      "xanino": "Design of posters, flyers, brochures, icons, social media artwork, vector and traditional illustration."
+    },
+    "education": {
+      "title": "Education",
+      "complementaryTitle": "Complementary education",
+      "certProf": "Development of Multimedia Editorial Products",
+      "certProfText": "Professional Certificate, level 3",
+      "cfgs": "HNC in Plastic Arts and Design in Illustration",
+      "degree": "Degree in Fine Arts",
+      "illustration": "Techniques applied to illustration",
+      "typographic": "Typographic architecture and layout",
+      "labDig": "Creation, editing and promotion of digital content and services (LABDig)"
+    },
+    "languages": {
+      "title": "Languages",
+      "spanishGalician": "Spanish | Galician",
+      "english": "English",
+      "germanCatalan": "German | Catalan",
+      "native": "Native",
+      "basic": "Basic",
+      "mediumHigh": "Medium-High"
+    },
+    "seeLess": "See less",
+    "seeMore": "See more"
+  },
+  "copyright": "All rights reserved.",
+  "angular": "Made in Angular with"
+}
