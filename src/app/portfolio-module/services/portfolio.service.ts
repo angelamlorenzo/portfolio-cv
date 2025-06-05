@@ -14,7 +14,7 @@ export class PortfolioService {
   public selectedCategory: BehaviorSubject<string> = new BehaviorSubject("Diseño Gráfico");
 
   public getGallery(): Observable<IGallery[]> {
-    const url = assetUrl("/data/portfolio-data.json");
+    const url = "assets/data/portfolio-data.json";
     return this.http.get<IGallery[]>(url).pipe(delay(400));
   }
 }

@@ -36,4 +36,14 @@ export class NavbarComponent {
     this.translate.use(lang);
     this.currentLanguage = lang;
   }
+
+  /*@HostListener("window:resize")
+  @HostListener("window:scroll")
+  onViewportChange() {
+    const nav: HTMLElement = this.el.nativeElement.querySelector("nav.navbar");
+    const offsetTop = window.visualViewport?.offsetTop ?? 0;
+    if (nav) {
+      nav.style.top = `${offsetTop}px`;
+    }
+  }*/
 }
