@@ -194,5 +194,6 @@
     "seeMore": "See more"
   },
   "copyright": "All rights reserved.",
-  "angular": "Made in Angular with"
+  "angular": "Made in Angular with",
+  "loading": "Loading..."
 }
