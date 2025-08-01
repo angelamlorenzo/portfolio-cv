@@ -1,13 +1,15 @@
 <div class="about-me bg-light dark">
   <div class="py-5">
     <div class="col-xl-6 offset-xl-3 col-10 offset-1 pb-3">
-      <h2 class="text-center mb-5">{{ title | translate }}</h2>
+      <h2 class="text-center mb-5">{{ "aboutMe.title" | translate }}</h2>
       <hr />
-      <p class="mt-4">{{ paragraphOne | translate }}</p>
-      <p class="mb-4">{{ paragraphTwo | translate }}</p>
+      <p class="mt-4">{{ "aboutMe.paragraphOne" | translate }}</p>
+      <p class="mb-4">{{ "aboutMe.paragraphTwo" | translate }}</p>
       <hr class="me-0 ms-auto" />
       <div class="d-flex align-items-center mt-4">
-        <button class="btn btn-outline-secondary btn-lg fw-semibold" (click)="resume()">{{ buttonCv | translate }}</button>
+        <button class="btn btn-outline-secondary btn-lg fw-semibold" (click)="resume()">
+          {{ "aboutMe.downloadCvButton" | translate }}
+        </button>
         <div class="ms-auto d-flex">
           <button class="btn btn-outline-secondary fw-semibold me-4" (click)="openLinkedIn()"><i class="bi bi-linkedin fs-5"></i></button>
           <button class="btn btn-outline-secondary fw-semibold" (click)="openMail()"><i class="bi bi-envelope fs-5"></i></button>

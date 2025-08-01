@@ -1,6 +1,13 @@
-<nav class="navbar navbar-expand-lg px-xl-2 fixed-top">
+<nav
+  class="navbar navbar-expand-lg"
+  [ngClass]="{
+    'px-xl-2 fixed-top bg-white shadow-sm': !isProjectPage,
+    'position-absolute top-0 end-0 border-0 p-0 m-0 bg-transparent z-3': isProjectPage
+  }"
+>
   <div class="container-fluid">
     <button
+      *ngIf="!isProjectPage"
       class="navbar-toggler border-2 border-secondary"
       type="button"
       data-bs-toggle="collapse"
@@ -11,7 +18,7 @@
     >
       <i class="bi bi-list text-secondary fs-2"></i>
     </button>
-    <div class="collapse navbar-collapse text-secondary" id="navbarNavAltMarkup">
+    <div #navbarCollapse class="collapse navbar-collapse text-secondary" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto fs-5 text-secondary">
         <ng-container *ngIf="!isProjectPage">
           <a
@@ -20,25 +27,30 @@
             [attr.aria-current]="item.active"
             [href]="item.href"
             *ngFor="let item of navBar"
-            (click)="setNavBarOption(item)"
+            (click)="setNavBarOption(item); closeNavbar()"
           >
             {{ item.name | translate }}
           </a>
         </ng-container>
-        <li class="nav-item dropdown">
+        <li
+          class="nav-item dropdown"
+          [ngClass]="{
+            'position-absolute top-0 end-0 p-3': isProjectPage
+          }"
+        >
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
             {{ "header.language." + currentLanguage | translate }}
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" (click)="changeLanguage('en')" *ngIf="currentLanguage !== 'en'">{{
-                "header.language.en" | translate
-              }}</a>
+              <a class="dropdown-item" (click)="changeLanguage('en')" *ngIf="currentLanguage !== 'en'">
+                {{ "header.language.en" | translate }}
+              </a>
             </li>
             <li>
-              <a class="dropdown-item" (click)="changeLanguage('es')" *ngIf="currentLanguage !== 'es'">{{
-                "header.language.es" | translate
-              }}</a>
+              <a class="dropdown-item" (click)="changeLanguage('es')" *ngIf="currentLanguage !== 'es'">
+                {{ "header.language.es" | translate }}
+              </a>
             </li>
           </ul>
         </li>
