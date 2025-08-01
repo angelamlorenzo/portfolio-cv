@@ -13,7 +13,7 @@ import { ViewportScroller } from "@angular/common";
 export class ProjectDetailComponent implements OnInit, OnDestroy {
   @Input() category: string = "";
   @Input() selectedProject: BehaviorSubject<IProject> = new BehaviorSubject({} as IProject);
-  public loading: boolean = true;
+  public loading: boolean = false;
   public goBack: string = "portfolio.goBack";
 
   private subscription: Subscription = new Subscription();
@@ -39,21 +39,19 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
   private chooseProject(): void {
     this.loading = true;
 
-    setTimeout(() => {
-      const savedProject = sessionStorage.getItem("selectedProject");
+    const savedProject = sessionStorage.getItem("selectedProject");
 
-      if (savedProject) {
-        this.selectedProject.next(JSON.parse(savedProject));
-        this.loading = false;
-      } else {
-        this.subscription.add(
-          this.portfolioService.selectedProject.subscribe((project) => {
-            this.selectedProject.next(project);
-            sessionStorage.setItem("selectedProject", JSON.stringify(project));
-            this.loading = false;
-          })
-        );
-      }
-    }, 200);
+    if (savedProject) {
+      this.selectedProject.next(JSON.parse(savedProject));
+      this.loading = false;
+    } else {
+      this.subscription.add(
+        this.portfolioService.selectedProject.subscribe((project) => {
+          this.selectedProject.next(project);
+          sessionStorage.setItem("selectedProject", JSON.stringify(project));
+          this.loading = false;
+        })
+      );
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from "@angular/core";
+import { Component, ElementRef, EventEmitter, HostListener, Input, Output, ViewChild } from "@angular/core";
 import { INavBar } from "../../models/interfaces";
 import { TranslateService } from "@ngx-translate/core";
 import { Router } from "@angular/router";
@@ -10,8 +10,8 @@ import { Router } from "@angular/router";
 })
 export class NavbarComponent {
   @Input() navBar: INavBar[] = [];
-  @Input() logoUrl: string = "";
   @Output() selectMenuItem: EventEmitter<INavBar> = new EventEmitter();
+  @ViewChild("navbarCollapse") navbarCollapse!: ElementRef;
 
   public currentLanguage: string = "es";
   public isProjectPage = false;
@@ -23,9 +23,7 @@ export class NavbarComponent {
   }
 
   ngOnInit() {
-    this.translate.setDefaultLang("en");
-    const currentLang = this.translate.currentLang || "en";
-    this.currentLanguage = currentLang;
+    this.currentLanguage = this.translate.currentLang || "en";
   }
 
   public setNavBarOption(selectedItem: INavBar): void {
@@ -37,13 +35,16 @@ export class NavbarComponent {
     this.currentLanguage = lang;
   }
 
-  /*@HostListener("window:resize")
-  @HostListener("window:scroll")
-  onViewportChange() {
-    const nav: HTMLElement = this.el.nativeElement.querySelector("nav.navbar");
-    const offsetTop = window.visualViewport?.offsetTop ?? 0;
-    if (nav) {
-      nav.style.top = `${offsetTop}px`;
+  public closeNavbar() {
+    const element = this.navbarCollapse.nativeElement;
+    element.classList.remove("show");
+  }
+
+  @HostListener("document:click", ["$event.target"])
+  onClickOutside(target: HTMLElement): void {
+    const navbarEl = this.navbarCollapse?.nativeElement;
+    if (navbarEl?.classList.contains("show") && !navbarEl.contains(target)) {
+      this.closeNavbar();
     }
-  }*/
+  }
 }

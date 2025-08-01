@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { BehaviorSubject, delay, Observable } from "rxjs";
 import { IGallery, IProject } from "../models/interfaces";
-import { assetUrl } from "src/single-spa/asset-url";
 
 @Injectable({
   providedIn: "root",

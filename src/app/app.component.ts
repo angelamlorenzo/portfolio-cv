@@ -7,7 +7,7 @@ import { INavBar } from "./portfolio-module/models/interfaces";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "portfolio";
+  public title = "portfolio";
 
   public navBar: INavBar[] = [
     { href: "#about", name: "header.aboutMe", active: true },

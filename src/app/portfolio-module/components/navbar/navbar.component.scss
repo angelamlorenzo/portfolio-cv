@@ -17,3 +17,9 @@
     display: inline-block;
   }
 }
+
+.dropdown-menu {
+  width: auto !important;
+  min-width: 0 !important;
+  white-space: nowrap;
+}

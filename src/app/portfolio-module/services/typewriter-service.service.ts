@@ -21,8 +21,8 @@ export class TypewriterService {
   }
 
   public typeEffect(word: string) {
-    const forward = this.type({ word, speed: 50 });
-    const backward = this.type({ word, speed: 30, deleting: true });
+    const forward = this.type({ word, speed: 70 });
+    const backward = this.type({ word, speed: 70, deleting: true });
 
     return concat(forward, of("").pipe(delay(1200), ignoreElements()), backward, of("").pipe(delay(300), ignoreElements()));
   }
@@ -30,7 +30,7 @@ export class TypewriterService {
   public getTypewriterEffect(titles: string[]) {
     return from(titles).pipe(
       concatMap((title) => this.typeEffect(title)),
-      repeat()
+      repeat(2)
     );
   }
 }
