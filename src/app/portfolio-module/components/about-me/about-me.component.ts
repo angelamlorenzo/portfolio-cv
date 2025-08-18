@@ -10,8 +10,9 @@ export class AboutMeComponent {
   constructor(private translate: TranslateService) {}
 
   public resume(): void {
-    const pdfCv =
-      this.translate.currentLang === "en" ? "assets/documents/angelamlorenzo_resume.pdf" : "assets/documents/angelamlorenzo_cv.pdf";
+    const lang = this.translate.currentLang || this.translate.getDefaultLang();
+    const pdfCv = lang === "en" ? "assets/documents/angelamlorenzo_resume.pdf" : "assets/documents/angelamlorenzo_cv.pdf";
+
     window.open(pdfCv, "_blank");
   }
 
