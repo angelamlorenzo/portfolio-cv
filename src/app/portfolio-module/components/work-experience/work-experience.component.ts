@@ -19,41 +19,62 @@ export class WorkExperienceComponent {
     {
       title: "resume.workExperience.juniorDev",
       company: "Víntegris",
-      period: `2023-`,
-      description: "resume.workExperience.vintegrisFront",
+      period: "2023-",
+      description: [
+        "resume.workExperience.vintegrisFront.pointOne",
+        "resume.workExperience.vintegrisFront.pointTwo",
+        "resume.workExperience.vintegrisFront.pointThree",
+      ],
     },
     {
-      title: "resume.workExperience.graphicDesignerWeb",
+      title: "resume.workExperience.graphicDesignerDigital",
       company: "Víntegris",
       period: "2020-2023",
-      description: "resume.workExperience.vintegris",
+      description: [
+        "resume.workExperience.vintegris.pointOne",
+        "resume.workExperience.vintegris.pointTwo",
+        "resume.workExperience.vintegris.pointThree",
+        "resume.workExperience.vintegris.pointFour",
+      ],
     },
     {
       title: "resume.workExperience.graphicDesignerWeb",
       company: "Media Motive",
       period: "2019-2020",
-      description: "resume.workExperience.mediaMotive",
+      description: [
+        "resume.workExperience.mediaMotive.pointOne",
+        "resume.workExperience.mediaMotive.pointTwo",
+        "resume.workExperience.mediaMotive.pointThree",
+      ],
     },
     {
       title: "resume.workExperience.graphicWebIllustration",
       company: "Freelance",
       period: "2018-2019",
-      description: "resume.workExperience.freelance",
+      description: [
+        "resume.workExperience.freelance.pointOne",
+        "resume.workExperience.freelance.pointTwo",
+        "resume.workExperience.freelance.pointThree",
+        "resume.workExperience.freelance.pointFour",
+      ],
     },
     {
       title: "resume.workExperience.graphicDesignerIllustration",
       company: "Herder Editorial",
       period: "2017",
-      description: "resume.workExperience.herder",
+      description: [
+        "resume.workExperience.herder.pointOne",
+        "resume.workExperience.herder.pointTwo",
+        "resume.workExperience.herder.pointThree",
+      ],
     },
     {
       title: "resume.workExperience.graphicDesignerIllustration",
       company: "Xaniño, Comunicación Gráfica",
       period: "2016",
-      description: "resume.workExperience.xanino",
+      description: ["resume.workExperience.xanino.pointOne", "resume.workExperience.xanino.pointTwo"],
     },
   ];
-
   public educationExperiences: Experience[] = [
     {
       title: "resume.education.certProf",
@@ -75,18 +96,18 @@ export class WorkExperienceComponent {
   public complementaryEducation: Experience[] = [
     {
       title: "resume.education.illustration",
-      period: "2019",
+      period: "2018",
       institution: "CIFO L'Hospitalet",
     },
     {
-      title: "resume.education.illustration",
-      period: "2019",
+      title: "resume.education.typographic",
+      period: "2018",
       institution: "CIFO L'Hospitalet",
     },
     {
-      title: "resume.education.illustration",
-      period: "2019",
-      institution: "CIFO L'Hospitalet",
+      title: "resume.education.labDig",
+      period: "2017",
+      institution: "Tantágora",
     },
   ];
 

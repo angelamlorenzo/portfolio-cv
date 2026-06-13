@@ -52,7 +52,7 @@ export interface Experience {
   company?: string;
   institution?: string;
   period: string;
-  description?: string;
+  description?: string[];
 }
 
 export interface Languages {

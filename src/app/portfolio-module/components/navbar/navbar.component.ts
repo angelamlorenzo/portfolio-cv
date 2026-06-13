@@ -16,14 +16,24 @@ export class NavbarComponent {
   public currentLanguage: string = "es";
   public isProjectPage = false;
 
-  constructor(private router: Router, private translate: TranslateService) {
+  constructor(
+    private router: Router,
+    private translate: TranslateService,
+  ) {
     this.router.events.subscribe(() => {
       this.isProjectPage = this.router.url.startsWith("/portfolio/");
     });
   }
 
   ngOnInit() {
-    this.currentLanguage = this.translate.currentLang || "en";
+    const savedLanguage = localStorage.getItem("language");
+
+    if (savedLanguage) {
+      this.currentLanguage = savedLanguage;
+      this.translate.use(savedLanguage);
+    } else {
+      this.currentLanguage = this.translate.currentLang || "en";
+    }
   }
 
   public setNavBarOption(selectedItem: INavBar): void {
@@ -33,6 +43,7 @@ export class NavbarComponent {
   public changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLanguage = lang;
+    localStorage.setItem("language", lang);
   }
 
   public closeNavbar() {
