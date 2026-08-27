@@ -12,13 +12,16 @@ export class CoverComponent implements OnInit, OnDestroy {
   public typedText = new BehaviorSubject<string>("");
   public finishedTyping = false;
 
-  private titlesEn = ["Front End Developer", "Graphic Designer", "Publishing Creative"];
-  private titlesEs = ["Desarrolladora Front End", "Diseñadora Gráfica", "Creativa Editorial"];
+  private titlesEn = ["Graphic & Digital Designer", "Front End Developer", "Publishing Creative", "Web Designer"];
+  private titlesEs = ["Diseñadora Gráfica  y Digital", "Desarrolladora Front End", "Creativa Editorial", "Diseñadora Web"];
 
   private typewriterSub = new Subscription();
   private langChangeSub = new Subscription();
 
-  constructor(private typewriterService: TypewriterService, private translate: TranslateService) {}
+  constructor(
+    private typewriterService: TypewriterService,
+    private translate: TranslateService,
+  ) {}
 
   ngOnInit() {
     this.loadTypedText(this.translate.currentLang);

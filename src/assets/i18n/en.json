@@ -163,12 +163,38 @@
       "graphicDesignerWeb": "Graphic and Web Designer",
       "graphicDesignerIllustration": "Graphic Designer and Illustrator",
       "graphicWebIllustration": "Graphic/Web Designer and Illustrator",
-      "vintegrisFront": "Development of the nebulaSUITE digital identity solution using microsites with Angular and Bootstrap.",
-      "vintegris": "Branding, brochures, dossiers, presentations, stationery, and product data sheets. Social media content and image editing. UI/UX design. Maintenance and management of the company's websites with WordPress. Digital illustration. Design and layout of newsletters and email marketing.",
-      "mediaMotive": "Landing page layout in CSS and HTML using Bootstrap. Web ad creation using Google Web Designer, Photoshop, and Illustrator.",
-      "freelance": "Illustrations and graphic design focused on multimedia projects. Editorial design. Branding. WordPress website creation.",
-      "herder": "Graphic design for websites and social media, editorial design (covers, layout), catalogs, posters, email marketing. UI design for Herder's Subscription Portal. Branding development, web and social media content, and illustrations for Filosofía & Co.",
-      "xanino": "Design of posters, flyers, brochures, icons, social media artwork, vector and traditional illustration."
+      "vintegrisFront": {
+        "pointOne": "Developed microsites and web applications for nebulaSUITE using Angular, TypeScript, and Bootstrap.",
+        "pointTwo": "Consumed REST APIs, developed CRUD functionalities, and implemented responsive user interfaces.",
+        "pointThree": "Contributed to the evolution of reusable components for the corporate Design System.",
+        "pointFour": "Worked in Agile environments using Jira, Git, and Visual Studio Code."
+      },
+      "vintegris": {
+        "pointOne": "Participated in the corporate rebranding of Euronovate Group and adapted the visual identity across multiple media.",
+        "pointTwo": "Designed product materials, sales documentation, and digital marketing content.",
+        "pointThree": "Developed newsletters using HTML/CSS and managed corporate websites with WordPress.",
+        "pointFour": "Created communication materials for SaaS solutions, digital identity, and electronic signature products."
+      },
+      "mediaMotive": {
+        "pointOne": "Built landing pages using HTML, CSS, and Bootstrap.",
+        "pointTwo": "Developed digital advertising assets using Google Web Designer.",
+        "pointThree": "Produced visual resources for online campaigns and digital marketing initiatives."
+      },
+      "freelance": {
+        "pointOne": "Developed branding and visual identity projects.",
+        "pointTwo": "Designed editorial and graphic communication materials.",
+        "pointThree": "Created websites using WordPress.",
+        "pointFour": "Produced illustrations for multimedia projects."
+      },
+      "herder": {
+        "pointOne": "Designed editorial publications, book covers, and catalogs.",
+        "pointTwo": "Created digital materials for websites and social media.",
+        "pointThree": "Designed the visual proposal for the Herder Suscripciones platform in collaboration with the development team."
+      },
+      "xanino": {
+        "pointOne": "Designed posters, promotional materials, and vector illustrations.",
+        "pointTwo": "Created visual content for communication campaigns and social media."
+      }
     },
     "education": {
       "title": "Education",

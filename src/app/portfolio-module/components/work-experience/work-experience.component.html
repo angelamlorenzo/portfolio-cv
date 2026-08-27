@@ -8,13 +8,17 @@
         <div class="bg-white shadow-sm rounded py-4 px-5">
           <h4 class="rainbow-text mb-0 mt-2 lh-1">{{ workExperience | translate }}</h4>
           <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
-
           <div *ngFor="let experience of experiences; let i = index">
-            <ng-container *ngIf="i < 3 || isWorkExperienceExpanded">
+            <ng-container *ngIf="i < 2 || isWorkExperienceExpanded">
               <div class="mb-3">
                 <p class="fs-6 fw-semibold mb-0">{{ experience.title | translate }}</p>
                 <p class="fs-7 mb-2">{{ experience.company }} | {{ experience.period | translate }}</p>
-                <p>{{ experience.description! | translate }}</p>
+
+                <ul class="mb-3 ps-3">
+                  <li *ngFor="let point of experience.description">
+                    {{ point | translate }}
+                  </li>
+                </ul>
                 <hr />
               </div>
             </ng-container>
@@ -72,10 +76,10 @@
         </div>
 
         <div class="bg-white shadow-sm rounded py-4 px-5 mt-4">
-          <h4 class="rainbow-text mb-0 mt-2 lh-1">{{ languages | translate }}</h4>
+          <h4 class="rainbow-text mb-1 mt-2 lh-1">{{ languages | translate }}</h4>
           <hr class="me-0 mt-0 mb-4 ms-auto work-experience__color-line" />
 
-          <div *ngFor="let language of languagesList; let i = index">
+          <div *ngFor="let language of languagesList; let i = index" class="mt-1">
             <div class="mb-2 d-flex justify-content-between align-items-center">
               <span class="fs-6 fw-semibold">{{ language.language | translate }}</span>
               <span class="fs-7">{{ language.level | translate }}</span>
